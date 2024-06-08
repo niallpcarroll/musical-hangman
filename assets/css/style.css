@@ -16,6 +16,25 @@ body {
     justify-content: center;
     min-height: 100vh;
     background: #3a4d23;
+}
 
+.container {
+    width: 80vw;
+    background: #1a230f;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: flex-end;
+    gap: 70px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    border: 2px solid linen;
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
 }
 

@@ -1,6 +1,11 @@
 /* Google font import */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+*,
+*::before, *::after {
+    box-sizing: border-box;
+}
+
 /* Override default styles */
 * {
     padding: 0;
@@ -100,5 +105,57 @@ h3 {
 .keyboard button:hover {
     color: #3a4d23;
     background: linen;
+}
+
+.game-modal {
+    position: fixed;
+    align-items: center;
+    width: 50vw;
+    background: rgba(167,174,156, 0.9);
+    padding: 30px;
+    border: 4px solid linen;
+    border-radius: 10px;
+    display: flex;
+}
+
+.game-end-img {
+    width: 60%;
+    height: 50vh;
+    margin-left: 20%;
+    align-items: center;
+    border-radius: 10px;
+    border: 4px solid linen;
+}
+
+.game-end p, .game-end h3, .game-end span {
+    color: #1a230f;
+    font-weight: 600;
+}
+
+.game-end p {
+    text-align: center;
+}
+
+.replay-btn {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: linen;
+    border: 2px solid linen;
+    background: #3a4d23;
+    margin-top: 10px;
+    text-transform: uppercase;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.replay-btn:hover {
+    color: #3a4d23;
+    background: linen;
+    border: 2px solid #3a4d23;
+    
 }
 

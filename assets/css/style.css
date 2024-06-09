@@ -77,6 +77,13 @@ h3 {
     margin-bottom: 30px;
 }
 
+p {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
+
 .question-text {
     font-weight: 500;
     align-items: center;

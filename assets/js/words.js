@@ -140,5 +140,4 @@ const wordList = [
         word: "sparrow",
         hint: "Mozart Mass nicknamed after this bird."
     },
-    
-]
+];

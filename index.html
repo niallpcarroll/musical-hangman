@@ -7,20 +7,24 @@
     <title>Musical Hangman</title>
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Link to JavaScript file with defer note -->
+    <!-- Link to main JavaScript file with defer note -->
     <script src="assets/js/script.js" defer></script>
+    <!-- Link to words & questions JavaScript file with defer note -->
+    <script src="assets/js/words.js" defer></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons8-orchestra-96.png">
 </head>
 
 <body>
 
     <!-- Pop-up invisible until sixth incorrect guess -->
     <div class="game-modal">
-<div class="game-end">
-    <img class="game-end-img" src="./assets/images/game_over.jpg" alt="game over">
-    <h3>You couldn't beat the musical hangman this time!</h3>
-    <p>The correct word was "<span>Mozart</span>"</p>
-    <button class="replay-btn">Play Again!</button>
-</div>
+        <div class="game-end">
+            <img class="game-end-img" src="./assets/images/game_over.jpg" alt="game over">
+            <h3>You couldn't beat the musical hangman this time!</h3>
+            <p>The correct word was "<span>Mozart</span>"</p>
+            <button class="replay-btn">Play Again!</button>
+        </div>
     </div>
     <div class="container">
         <div class="hangman-image">
@@ -49,7 +53,7 @@
             </div>
             <!-- Keyboard input -->
             <div class="keyboard">
-                
+
             </div>
         </div>
     </div>

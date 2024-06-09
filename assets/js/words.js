@@ -1,123 +1,144 @@
 // List of questions-hints and answers
 const wordList = [
     {
-        word: "Vivaldi",
+        word: "vivaldi",
         hint: "Composer known as 'The Red Priest'."
     },
     {
-        word: "Legato",
+        word: "legato",
         hint: "Musical direction meaning 'smoothly'."
     },
     {
-        word: "",
-        hint: ""
+        word: "quartet",
+        hint: "Group of four players."
     },
     {
-        word: "",
-        hint: ""
+        word: "nocturne",
+        hint: "John Field created this musical form."
     },
     {
-        word: "",
-        hint: ""
+        word: "fidelio",
+        hint: "Beethoven's only opera."
     },
     {
-        word: "",
-        hint: ""
+        word: "haydn",
+        hint: "Composer of the 'Surprise' Symphony."
     },
     {
-        word: "",
-        hint: ""
+        word: "dublin",
+        hint: "Composer Charles Villiers Stanford was born in this city."
     },
     {
-        word: "",
-        hint: ""
+        word: "baroque",
+        hint: "Musical period associated with J.S. Bach."
     },
     {
-        word: "",
-        hint: ""
+        word: "holst",
+        hint: "Composer of 'The Planets' suite."
     },
     {
-        word: "",
-        hint: ""
+        word: "slavonic",
+        hint: "Famous dances by Dvořák"
     },
     {
-        word: "",
-        hint: ""
+        word: "trout",
+        hint: "Schubert's Piano Quintet in A-Major?"
     },
     {
-        word: "",
-        hint: ""
+        word: "giuseppe",
+        hint: "First name of composer Verdi"
     },
     {
-        word: "",
-        hint: ""
+        word: "gershwin",
+        hint: "'Rhapsody in Blue' composer."
     },
     {
-        word: "",
-        hint: ""
+        word: "india",
+        hint: "Setting for Delibes' 'Lakmé'."
     },
     {
-        word: "",
-        hint: ""
+        word: "salieri",
+        hint: "Has was once thought to have poisoned Mozart."
     },
     {
-        word: "",
-        hint: ""
+        word: "borodin",
+        hint: "This composer was also a chemistry professor."
     },
     {
-        word: "",
-        hint: ""
+        word: "sibelius",
+        hint: "Composer of 'Finlandia'."
     },
     {
-        word: "",
-        hint: ""
+        word: "farewell",
+        hint: "Haydn symphony where the performers leave one by one."
     },
     {
-        word: "",
-        hint: ""
+        word: "funeral",
+        hint: "A dirge is composed for this event."
     },
     {
-        word: "",
-        hint: ""
+        word: "chord",
+        hint: "Group of notes played together."
     },
     {
-        word: "",
-        hint: ""
+        word: "crotchet",
+        hint: "A quarter note."
     },
     {
-        word: "",
-        hint: ""
+        word: "miserere",
+        hint: "Allegri's most famous choral work."
     },
     {
-        word: "",
-        hint: ""
+        word: "aquarium",
+        hint: "Seventh movement of 'Carnival of the Animals'."
     },
     {
-        word: "",
-        hint: ""
+        word: "oratorio",
+        hint: "'Messiah' by Handel is one example."
     },
     {
-        word: "",
-        hint: ""
+        word: "quickly",
+        hint: "How 'allegro' should be played."
     },
     {
-        word: "",
-        hint: ""
+        word: "domingo",
+        hint: "One of the 'Three Tenors'."
     },
     {
-        word: "",
-        hint: ""
+        word: "hector",
+        hint: "Berlioz's first name."
     },
     {
-        word: "",
-        hint: ""
+        word: "norway",
+        hint: "Grieg was born in this country."
     },
     {
-        word: "",
-        hint: ""
+        word: "albeniz",
+        hint: "Nineteenth century Spanish composer."
     },
     {
-        word: "",
-        hint: ""
+        word: "giacomo",
+        hint: "Puccini's first name."
     },
+    {
+        word: "chopin",
+        hint: "He composed the 'Revolutionary' étude."
+    },
+    {
+        word: "emperor",
+        hint: "Beethoven's fifth Piano Concerto?"
+    },
+    {
+        word: "purcell",
+        hint: "Composer of the 'Funeral Music for Queen Mary'."
+    },
+    {
+        word: "baritone",
+        hint: "Vocal range between tenor and bass."
+    },
+    {
+        word: "sparrow",
+        hint: "Mozart Mass nicknamed after this bird."
+    },
+    
 ]

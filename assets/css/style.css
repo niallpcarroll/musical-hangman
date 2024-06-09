@@ -25,7 +25,6 @@ body {
     background: #3a4d23;
 }
 
-
 .container {
     min-width: 90vw;
     background: #1a230f;
@@ -36,6 +35,7 @@ body {
     gap: 70px;
 }
 
+/* Game title */
 h1 {
     font-size: 1.5rem;
     border: 2px solid linen;
@@ -87,6 +87,7 @@ h3 {
     color: orange;
 }
 
+/* Keyboard styles */
 .keyboard {
     display: flex;
     gap: 5px;
@@ -111,6 +112,7 @@ h3 {
     background: linen;
 }
 
+/* Pop-up for end of game - display correct answer & play again button */
 .game-modal {
     position: fixed;
     align-items: center;
@@ -141,6 +143,7 @@ h3 {
     text-align: center;
 }
 
+/* Replay button style in pop-up */
 .replay-btn {
     align-items: center;
     justify-content: center;
@@ -163,6 +166,7 @@ h3 {
     border: 2px solid #3a4d23;
 }
 
+/* Display correct answer in uppercase */
 .game-modal span {
     text-transform: uppercase;
 }
@@ -175,6 +179,7 @@ h3 {
     margin-left: 25%;
 }
 
+/* Media query for small screens - cause content to appear in column and h1 to disappear */
 @media (max-width: 782px) {
     .container {
         flex-direction: column;

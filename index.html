@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musical Hangman</title>
+    <!-- Link to CSS file -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to JavaScript file with defer note -->
+    <script src="assets/js/script.js" defer></script>
 </head>
 
 <body>
+
+    <!-- Pop-up invisible until sixth incorrect guess -->
     <div class="game-modal">
 <div class="game-end">
     <img class="game-end-img" src="./assets/images/game_over.jpg" alt="game over">
@@ -20,6 +25,7 @@
     <div class="container">
         <div class="hangman-image">
             <img src="./assets/images/hangman-0.png" alt="hangman-0-image">
+            <!-- Game title - invisible on smaller screens -->
             <h1>Musical Hangman!</h1>
         </div>
         <div class="game-box">
@@ -41,11 +47,9 @@
                 <h3>Incorrect Guesses:</h3>
                 <p class="guesses-text"><span class="wrong-guess">0</span> / 6</p>
             </div>
+            <!-- Keyboard input -->
             <div class="keyboard">
-                <button>a</button><button>b</button><button>c</button><button>d</button><button>e</button><button>f</button><button>g</button>
-                <button>h</button><button>i</button><button>j</button><button>k</button><button>l</button><button>m</button><button>n</button>
-                <button>o</button><button>p</button><button>q</button><button>r</button><button>s</button><button>t</button><button>u</button>
-                <button>v</button><button>w</button><button>x</button><button>y</button><button>z</button>
+                
             </div>
         </div>
     </div>

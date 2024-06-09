@@ -1,5 +1,6 @@
-const keyboardDiv = document.querySelector(".keyboard");
 
+const keyboardDiv = document.querySelector(".keyboard");
+const wordDisplay = document.querySelector(".game-words");
 // List of questions-hints and answers
 const wordList = [
     {
@@ -147,7 +148,9 @@ const wordList = [
 // Get random word & question
 const getRandomWord = () => {
     const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
-    console.log(word, hint);
+    console.log(word);
+    document.querySelector(".question-text").innerText = hint;
+    wordDisplay.innerHTML = word.split("").map(() => `<li class="letter"></li>`).join("");
 }
 
 // Keyboard input buttons

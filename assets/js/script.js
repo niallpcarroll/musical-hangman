@@ -1,6 +1,9 @@
 
 const keyboardDiv = document.querySelector(".keyboard");
 const wordDisplay = document.querySelector(".game-words");
+const wrongGuess = document.querySelector(".wrong-guess");
+const hangmanImage = document.querySelector(".hangman-image img");
+
 // List of questions-hints and answers
 const wordList = [
     {
@@ -145,7 +148,8 @@ const wordList = [
     },
 ];
 
-let newWord;
+let newWord, incorrectCount = 0;
+const maxIncorrect = 6;
 
 // Get random word & question
 const getRandomWord = () => {
@@ -167,8 +171,11 @@ if(newWord.includes(clickedLetter)) {
         }
     })
 } else {
-    console.log(clickedLetter, "Incorrect letter!")
+    // Count incorrect answers and display successive hangman images
+    incorrectCount++;
+    hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
 }
+wrongGuess.innerText = `${incorrectCount} / ${maxIncorrect}`;
 }
 
 // Keyboard input buttons, event listener for keyboard button click

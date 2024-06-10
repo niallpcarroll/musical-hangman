@@ -166,7 +166,7 @@ const getRandomWord = () => {
 // Modal display if player is successful
 const gameOver = (winningGame) => {
     setTimeout(() => {
-        const modalText = winningGame ? `You found the right word` : `The correct word was`;
+        const modalText = winningGame ? `You found the right word:` : `The correct word was:`;
         gameModal.querySelector("img").src = `assets/images/${winningGame ? 'winner': 'game_over'}.jpg`;
         gameModal.querySelector("h3").innerText = `${winningGame ? 'Congratulations!': 'Game Over!'}`;
         gameModal.querySelector("p").innerHTML = `${modalText} <span>${newWord}</span>`;

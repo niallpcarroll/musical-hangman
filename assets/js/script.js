@@ -175,6 +175,8 @@ if(newWord.includes(clickedLetter)) {
     incorrectCount++;
     hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
 }
+
+button.disabled = true;
 wrongGuess.innerText = `${incorrectCount} / ${maxIncorrect}`;
 }
 

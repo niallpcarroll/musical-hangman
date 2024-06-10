@@ -156,13 +156,13 @@ As with the home page, the contact page utilises a black and white image for the
 </details>
 
 ### Responsive Design
-The website is designed to be responsive throughout - the design changes to be more compatible depending on which screen size the visitor uses. On mobile devices, content appears in a single column, whereas on larger devices the content of the home page spreads out to take up more of the available space, and the gallery images arrange into columns to increase their visibility.
+The game display is designed to be responsive throughout - the design changes to be more compatible depending on which screen size the visitor uses. On mobile devices, content appears in a single column, while the game title disappears to avoid pushing the game off the screen. On larger devices the content of the home page spreads out to take up more of the available space, with the hangman image appearing on the left and the keyboard, questions and letter spaces appearing on the right.
 
 ### Future Implementations
-There is plenty of potential for future development of this website. Some features that are planned but not yet executed are:
-- The possibility of a comments / review section. 
-- The possibility of an additional page with images and information of seasonal / occasional tours which might interest visitors.
-- The possibility of an additional page containing little-known facts about specific elements of Galway's history to further encourage uptake of the tours.
+There is plenty of potential for future development of this game. Some features that are planned but not yet executed are:
+- It will be very easy to add questions to the current list in JavaScript. 
+- The possibility of adding difficulty levels, such as 'easy', 'medium', and 'difficult' to appeal to players of different ages and experience.
+- The possibility of adding audio and visual clues instead of text questions alone.
 
 ### Accessibility
 The website is designed to be accessible. Measures taken to ensure this include:
@@ -175,18 +175,16 @@ The website is designed to be accessible. Measures taken to ensure this include:
 ## Technologies Used
 
 ### Languages Used
-This website has been created using HTML and CSS.
+This website has been created using HTML and CSS and JavaScript.
 
 ### Frameworks, Libraries & Programs Used
-+ [Google Fonts](https://fonts.google.com) -  For Philosopher font.
++ [Google Fonts](https://fonts.google.com) -  For Raleway font.
 
 + Git - For version control.
 
 + Github - To save & store files and deployment.
 
 + Gitpod - IDE used to write the code.
-
-+ [Font Awesome](https://www.fontawesome.com) - For icons used in header and footer.
 
 + [Balsamiq](https://www.balsamiq.com) - For wireframes.
 
@@ -196,7 +194,7 @@ This website has been created using HTML and CSS.
 Github pages is used to deploy this site. To deploy the site yourself, follow these instructions:
 
 1. Sign in to Github.
-2. Go to the repository for this project called [*walking-galway-history*](https://github.com/niallpcarroll/walking-galway-history.git).
+2. Go to the repository for this project called [*walking-galway-history*](https://github.com/niallpcarroll/musical-hangman.git).
 3. Click *settings*.
 4. In the column to the left, click *pages*.
 5. From the dropdown, select *main branch* and then save.
@@ -208,13 +206,13 @@ To fork the repository:
 
 1. Log in to Github.
 
-2. Go to the repository for this project called [*walking-galway-history*](https://github.com/niallpcarroll/walking-galway-history.git).
+2. Go to the repository for this project called [*musical-hangman*](https://github.com/niallpcarroll/musical-hangman.git).
 
 3. Click the Fork button in the top right corner.
 #### How to Clone
 1. Log in (or sign up) to GitHub.
 
-2. Go to the repository for this project, [*walking-galway-history*](https://github.com/niallpcarroll/walking-galway-history.git).
+2. Go to the repository for this project, [*musical-hangman*](https://github.com/niallpcarroll/musical-hangman.git).
 
 3. Click *Code* and choose whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link.
 

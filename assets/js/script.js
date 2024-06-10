@@ -153,11 +153,16 @@ const getRandomWord = () => {
     wordDisplay.innerHTML = word.split("").map(() => `<li class="letter"></li>`).join("");
 }
 
-// Keyboard input buttons
+const beginGame = (button, clickedLetter) => {
+    console.log(button, clickedLetter);
+}
+
+// Keyboard input buttons, event listener for keyboard button click
 for (let i = 97;  i <= 122; i++) {
     const button = document.createElement("button");
     button.innerText = String.fromCharCode(i);
     keyboardDiv.appendChild(button);
+    button.addEventListener("click", e => beginGame(e.target, String.fromCharCode(i)));
 }
 
 getRandomWord();

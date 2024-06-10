@@ -137,8 +137,16 @@ p {
     padding: 30px;
     border: 4px solid linen;
     border-radius: 10px;
-    display: none;
+    display: flex;
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
 
+.game-modal.show {
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .game-end-img {

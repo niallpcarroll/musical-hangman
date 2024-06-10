@@ -1,12 +1,11 @@
-
 const keyboardDiv = document.querySelector(".keyboard");
 const wordDisplay = document.querySelector(".game-words");
 const wrongGuess = document.querySelector(".wrong-guess");
 const hangmanImage = document.querySelector(".hangman-image img");
+const gameModal = document.querySelector(".game-modal");
 
 // List of questions-hints and answers
-const wordList = [
-    {
+const wordList = [{
         word: "vivaldi",
         hint: "Composer known as 'The Red Priest'."
     },
@@ -148,40 +147,55 @@ const wordList = [
     },
 ];
 
-let newWord, incorrectCount = 0;
+let newWord, correctLetters = [],
+    incorrectCount = 0;
 const maxIncorrect = 6;
 
 // Get random word & question
 const getRandomWord = () => {
-    const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
-newWord = word;
+    const {
+        word,
+        hint
+    } = wordList[Math.floor(Math.random() * wordList.length)];
+    newWord = word;
     console.log(word);
     document.querySelector(".question-text").innerText = hint;
     wordDisplay.innerHTML = word.split("").map(() => `<li class="letter"></li>`).join("");
 }
 
-// If / Else to check whether letter is in new word
-const beginGame = (button, clickedLetter) => {
-if(newWord.includes(clickedLetter)) {
-    // Display correct letters when selected
-    [...newWord].forEach((letter, index) => {
-        if(letter === clickedLetter) {
-            wordDisplay.querySelectorAll("li")[index].innerText = letter;
-            wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
-        }
-    })
-} else {
-    // Count incorrect answers and display successive hangman images
-    incorrectCount++;
-    hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
+const gameOver = (winningGame) => {
+    setTimeout(() => {
+        gameModal.classList.add("show");
+    }, 300);
 }
 
-button.disabled = true;
-wrongGuess.innerText = `${incorrectCount} / ${maxIncorrect}`;
+// If / Else to check whether letter is in new word
+const beginGame = (button, clickedLetter) => {
+    if (newWord.includes(clickedLetter)) {
+        // Display correct letters when selected
+        [...newWord].forEach((letter, index) => {
+            if (letter === clickedLetter) {
+                correctLetters.push(letter);
+                wordDisplay.querySelectorAll("li")[index].innerText = letter;
+                wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
+            }
+        })
+    } else {
+        // Count incorrect answers and display successive hangman images
+        incorrectCount++;
+        hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
+    }
+
+    button.disabled = true;
+    wrongGuess.innerText = `${incorrectCount} / ${maxIncorrect}`;
+
+    // Game over function if incorrect guesses reached
+    if (incorrectCount === maxIncorrect) return gameOver(false);
+    if (correctLetters.length === newWord.length) return gameOver(true);
 }
 
 // Keyboard input buttons, event listener for keyboard button click
-for (let i = 97;  i <= 122; i++) {
+for (let i = 97; i <= 122; i++) {
     const button = document.createElement("button");
     button.innerText = String.fromCharCode(i);
     keyboardDiv.appendChild(button);

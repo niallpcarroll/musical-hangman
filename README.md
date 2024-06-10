@@ -310,28 +310,22 @@ Below is a table with the website's features, detailing how it has been tested a
 
 |Feature|Test case|Outcome|
 |---|---|---|
-|Header |Scroll through website |Sticks to top of viewport |
-|Nav bar - Home |Click |Redirected to home page |
-|Nav bar - Gallery |Click |Redirected to Gallery page |
-|Nav bar - Contact |Click |Redirected to Contact page |
-|Nav bar - Icon (tablets and smaller) |Click |Menu shows |
-|Google Maps link |Click |Opens in new tab with location pin |
-|Contact links |Click |All redirect to contact page |
-|Contact form |Give the required information |Form is successfully sent |
-|Contact form |Omit required information |Form does not send; Notification displays |
-|Contact form - submit button |Click |Submits form |
-|Confirmation page |After clicking submit button |Displays confirmation |
-|Confirmation page |10 seconds after displaying |Redirects to home page | 
-|Social media link - Facebook |Click |External link to Facebook |
-|Social media link - Youtube |Click |External link to Youtube |
-|Social media link - Instagram |Click |External link to Instagram |
-|Footer |Scroll through website |Sticks to bottom of viewport |
+|Open Page| - |Image visible, keyboard & question appear |
+|Keyboard |Click letter |Letter fades, turns orange, no re-selection |
+|Keyboard (large screen) |Hover |Button colours inverted |
+|Keyboard |Click correct letter |Letter appears above question |
+|Keyboard |Click incorrect letter |Letter does not show above question |
+|Keyboard |Click incorrect letter |Hangman image changes, incorrect counter increases by 1 |
+|Keyboard |Click 6 incorrect letters |Pop-up message appears with image, correct answer & replay button |
+|Keyboard |Correct answer input |Pop-up message appears with image, correct answer & replay button |
+|Replay button |Click |New game begins |
+
 |Error page |Attempt navigation to non-existent page |Error page and message displays |
 
 #### Screen size compability
 Below is a table with different devices and the outcomes when visiting the website using different screen sizes.
 
-|Device|Responsive <768px|Responsive 768px to 991px|Responsive 992px to 1919px|Responsive >=1920px| Renders as expected |
+|Device|Responsive <782px|Responsive 782px to 991px|Responsive 992px to 1919px|Responsive >=1920px| Renders as expected |
 |---|---|---|---|---|---| 
 |Galaxy S8+ |Yes |n/a |n/a |n/a |Yes |
 |iPad Mini |n/a|Yes |n/a |n/a |Yes |
@@ -353,9 +347,11 @@ A number of bugs were identified during the course of testing. These are outline
 
 | Bug | Section | Fix |
 |---|---|---|
-| Text input area overflowing outside of div background on small screens | Contact page | Set width property to 100% |
-| Unbalanced layout above 2100px | Home page | Additional CSS styling |
-| One p element separating from img element on tablet landscape screen | Gallery page | Added break-inside:avoid property to CSS | 
+| getRandomWord function not working | index.html / script.js | Moved questions from words.js to script.js |
+| Question & keyboard no appearing | index.html / script.js | Corrected spelling error in script.js |
+| Hangman image not displaying | index.html / script.js | Replaced '' with `` |
+| Modal pop-up preventing keyboard from functioning |index.html / script.js / style.css | Altered 'pointer events' to 'none' in css |
+| Letter spaces not appearing after adding reset button | index.html / script.js | Corrected newWord variable |  
 
 ## Credits
 

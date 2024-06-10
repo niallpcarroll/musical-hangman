@@ -4,7 +4,7 @@ This project is designed to be an interactive and fun game, based on the traditi
 
 Find the link to the site [here](https://niallpcarroll.github.io/musical-hangman/)
 
-![Image of the site depicted on different devices](.//assets/readme-images/am_i_responsive.png)
+![Image of the site depicted on different devices](assets/readme-images/am_i_responsive.png)
 
 ## Contents
 
@@ -43,25 +43,25 @@ The website should be very straightforward for the user - the objective of the g
 
 ## Design
 ### Colour Scheme
-![Image of the colour palette used](.//assets/readme-images/galway_colour_scheme.png)
+![Image of the colour palette used](assets/readme-images/galway_colour_scheme.png)
 There are three dominant colours used throughout this website: #faf0e6, #3a4d23 and #1a230f. The first, #faf0e6 (or "Linen") is an off-white shade and it is used to emphasise borders as well as being the main text colour. #1a230f is a shade of dark green and it is used to provide a high contrast background for the off-white text. #3a4d23 is a lighter shade of green - it is used for the keyboard buttons, providing a contrast with the dark green background, while also contrasting with the #faf0e6 lettering. The colour scheme is inverted when the mouse is hovered over the keyboard buttons - the letters turn green while the background turns to linen.
 
 
 I used [Contrast Grid](https://eightshapes.com) to check compliance of the main colours with WCAG 2.0 minimum contrast. The result is a rating of 14.4 for #faf0e6 and #1a230f, and a rating of 8.2 for #faf0e6 and #3a4d23. The contrast score between the two shades of green does not pass, but neither colour is used with the other in the context of text with background.
 
-![Screenshot of colour contrast score](.//assets/readme-images/eightshapes.png)
+![Screenshot of colour contrast score](assets/readme-images/eightshapes.png)
 
 ### Typography
 The website uses one font throughout: "Raleway".
 
-![Image of the font used in headings, Philosopher](.//assets/readme-images/raleway-regular.png)
+![Image of the font used in headings, Philosopher](assets/readme-images/raleway-regular.png)
 
 The "Raleway" font is a serif font which is very neat, light and easy to read, while not appearing overly formal in its style.
 
 ### Imagery
 The only imagery currently employed on the website is a series of seven simple images drawn by the author to depict the progression of the hangman image. Here is the final image which displays before the game ends if the player is unsuccessful:
 
-![Screenshot of some of the images on the site](.//assets/readme-images/hangman-6.png)
+![Screenshot of some of the images on the site](assets/readme-images/hangman-6.png)
 
 ### Wireframes 
 These were the original wireframe ideas for the game layout:
@@ -69,7 +69,7 @@ These were the original wireframe ideas for the game layout:
 <details open>
 <summary>Images of wireframes for mobile devices:</summary>
 
-![Image of the wireframe for mobiles](.//assets/readme-images/mobile-wireframe.png)
+![Image of the wireframe for mobiles](assets/readme-images/mobile-wireframe.png)
 </details>
 
 
@@ -77,7 +77,7 @@ These were the original wireframe ideas for the game layout:
 <details>
 <summary>Images of wireframes for large screens:</summary>
 
-![Image of the homepage wireframe for large screens ](.//assets/readme-images/computer-wireframe.png)
+![Image of the homepage wireframe for large screens ](assets/readme-images/computer-wireframe.png)
 </details>
 
 ***

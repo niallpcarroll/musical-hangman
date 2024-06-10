@@ -1,3 +1,4 @@
+// Game contants
 const keyboardDiv = document.querySelector(".keyboard");
 const wordDisplay = document.querySelector(".game-words");
 const wrongGuess = document.querySelector(".wrong-guess");
@@ -149,11 +150,12 @@ const wordList = [{
     },
 ];
 
+// Variables for words, letter count
 let newWord, correctLetters,
     incorrectCount;
 const maxIncorrect = 6;
 
-// Reset game values
+// Reset game values, counter, keyboard, hangman image
 const reset = () => {
     correctLetters = [];
     incorrectCount = 0;
@@ -187,7 +189,7 @@ const gameOver = (winningGame) => {
     }, 300);
 }
 
-// If / Else to check whether letter is in new word
+// If / Else statement to check whether letter is in new word
 const beginGame = (button, clickedLetter) => {
     if (newWord.includes(clickedLetter)) {
         // Display correct letters when selected
@@ -212,11 +214,12 @@ const beginGame = (button, clickedLetter) => {
     if (correctLetters.length === newWord.length) return gameOver(true);
 }
 
-// Keyboard input buttons, event listener for keyboard button click
+// Keyboard input buttons event listener for keyboard button click
 for (let i = 97; i <= 122; i++) {
     const button = document.createElement("button");
     button.innerText = String.fromCharCode(i);
     keyboardDiv.appendChild(button);
+    // Event listener for keyboard button click
     button.addEventListener("click", e => beginGame(e.target, String.fromCharCode(i)));
 }
 

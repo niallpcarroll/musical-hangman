@@ -39,57 +39,45 @@ Musical Hangman is intended to be an easy-to-use, simple and fun game. The desig
 ### User Stories
 The website should be very straightforward for the user - the objective of the game is self-explanatory: there is a keyboard display, indications as to the length of the answer, and a counter for wrong answers. The pop-up gives a clear option to re-start the game.
 
-* The user will see a website whose purpose and function is clear - in this case, providing information about historical walking tours of Galway city.
-
-* The user wants an engaging experience, where the content of the website is clear, consistent and not overloaded with imagery or text.
-
 * The user wants a game which can be played more than once. The JavaScript code currently includes thirty questions and answers, which are chosen at random, so the game can be played multiple times.
 
 ## Design
 ### Colour Scheme
 ![Image of the colour palette used](./assets/readme-images/galway_colour_scheme.png)
+There are three dominant colours used throughout this website: #faf0e6, #3a4d23 and #1a230f. The first, #faf0e6 (or "Linen") is an off-white shade and it is used to emphasise borders as well as being the main text colour. #1a230f is a shade of dark green and it is used to provide a high contrast background for the off-white text. #3a4d23 is a lighter shade of green - it is used for the keyboard buttons, providing a contrast with the dark green background, while also contrasting with the #faf0e6 lettering. The colour scheme is inverted when the mouse is hovered over the keyboard buttons - the letters turn green while the background turns to linen.
 
-There are two dominant colours throughout the website: #fffafa and #0c2b80. #fffafa (or "Snow") is an off-white shade, and #0c2b80 is a dark blue. Both colours have been chosen to create high contrast between text and backgrounds in order to create visual impact and accessibility to readers. The colour scheme is inverted a number of times: the header and the footer have dark blue text and icons on the #fffafa background, while the main body has #fffafa text on a dark blue background. A degree of transparency is added to the dark blue in order to bring visibility to the background image of Galway while still maintaining readability.
 
-I used [Contrast Grid](https://eightshapes.com) to check compliance of the main colours with WCAG 2.0 minimum contrast. The result is a rating of 12.1, as seen below:
+I used [Contrast Grid](https://eightshapes.com) to check compliance of the main colours with WCAG 2.0 minimum contrast. The result is a rating of 14.4 for #faf0e6 and #1a230f, and a rating of 8.2 for #faf0e6 and #3a4d23. The contrast score between the two shades of green does not pass, but neither colour is used with the other in the context of text with background.
 
-![Screenshot of colour contrast score](./assets/readme-images/eightshapes_contrast.png)
+![Screenshot of colour contrast score](./assets/readme-images/eightshapes.png)
 
 ### Typography
-The website uses one font throughout: "Philosopher".
+The website uses one font throughout: "Raleway".
 
-![Image of the font used in headings, Philosopher](./assets/readme-images/philosopher_font_heading.png)
+![Image of the font used in headings, Philosopher](./assets/readme-images/raleway-regular.png)
 
-The "Philosopher" font is a sans-serif font which is very neat and suitable for both headings and text. It is clear and easy to read, but is not overly formal in its style.
+The "Raleway" font is a serif font which is very neat, light and easy to read, while not appearing overly formal in its style.
 
 ### Imagery
-The images used on the website are up-to-date images of Galway, and they are all images of locations which visitors can expect to visit if they take part in a walking tour.
+The only imagery currently employed on the website is a series of seven simple images drawn by the author to depict the progression of the hangman image. Here is the final image which displays before the game ends if the player is unsuccessful:
 
-![Screenshot of some of the images on the site](./assets/readme-images/images_screenshot.png)
+![Screenshot of some of the images on the site](./assets/readme-images/hangman-6.png)
 
 ### Wireframes 
-These were the original ideas for the three different sections:
+These were the original wireframe ideas for the game layout:
 
 <details open>
 <summary>Images of wireframes for mobile devices:</summary>
 
-![Image of the wireframe for mobiles](./assets/readme-images/mobile_wireframe.png)
+![Image of the wireframe for mobiles](./assets/readme-images/mobile-wireframe.png)
 </details>
 
-***
-<details>
-<summary>Images of wireframes for tablets:</summary>
-
-![Image of the wireframe for tablets](./assets/readme-images/tablet_wireframe.png)
-</details>
 
 ***
 <details>
 <summary>Images of wireframes for large screens:</summary>
 
-![Image of the homepage wireframe for large screens ](./assets/readme-images/home_large_screen.png)
-![Image of the gallery wireframe for large screens ](./assets/readme-images/gallery_large_screen.png)
-![Image of the contact wireframe for large screens ](./assets/readme-images/contact_large_screen.png)
+![Image of the homepage wireframe for large screens ](./assets/readme-images/computer-wireframe.png)
 </details>
 
 ***

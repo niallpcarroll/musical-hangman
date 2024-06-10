@@ -4,7 +4,7 @@ This project is designed to be an interactive and fun game, based on the traditi
 
 Find the link to the site [here](https://niallpcarroll.github.io/musical-hangman/)
 
-![Image of the site depicted on different devices](assets/images/readme-images/am_i_responsive.png)
+![Image of the site depicted on different devices](assets/images/readme-images/am-i-responsive.png)
 
 ## Contents
 

@@ -150,8 +150,8 @@ p {
 }
 
 .game-end-img {
-    width: 80%;
-    height: 50vh;
+    width: 60%;
+    height: 40vh;
     margin-left: 20%;
     align-items: center;
     border-radius: 10px;
@@ -193,6 +193,8 @@ p {
     background: linen;
     border: 2px solid #3a4d23;
 }
+
+
 
 /* Display correct answer in uppercase */
 .game-modal span {

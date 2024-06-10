@@ -3,6 +3,8 @@ const wordDisplay = document.querySelector(".game-words");
 const wrongGuess = document.querySelector(".wrong-guess");
 const hangmanImage = document.querySelector(".hangman-image img");
 const gameModal = document.querySelector(".game-modal");
+const playAgain = document.querySelector(".replay-btn");
+
 
 // List of questions-hints and answers
 const wordList = [{
@@ -147,9 +149,20 @@ const wordList = [{
     },
 ];
 
-let newWord, correctLetters = [],
-    incorrectCount = 0;
+let newWord, correctLetters,
+    incorrectCount;
 const maxIncorrect = 6;
+
+// Reset game values
+const reset = () => {
+    correctLetters = [];
+    incorrectCount = 0;
+    wordDisplay.innerHTML = newWord.split("").map(() => `<li class="letter"></li>`).join("");
+    gameModal.classList.remove("show");
+    hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
+    wrongGuess.innerText = `${incorrectCount} / ${maxIncorrect}`;
+    keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
+}
 
 // Get random word & question
 const getRandomWord = () => {
@@ -160,13 +173,13 @@ const getRandomWord = () => {
     newWord = word;
     console.log(word);
     document.querySelector(".question-text").innerText = hint;
-    wordDisplay.innerHTML = word.split("").map(() => `<li class="letter"></li>`).join("");
+    reset();
 }
 
 // Modal display if player is successful
 const gameOver = (winningGame) => {
     setTimeout(() => {
-        const modalText = winningGame ? `You found the right word:` : `The correct word was:`;
+        const modalText = winningGame ? `Correct! The word was:` : `The correct word was:`;
         gameModal.querySelector("img").src = `assets/images/${winningGame ? 'winner': 'game_over'}.jpg`;
         gameModal.querySelector("h3").innerText = `${winningGame ? 'Congratulations!': 'Game Over!'}`;
         gameModal.querySelector("p").innerHTML = `${modalText} <span>${newWord}</span>`;
@@ -208,3 +221,6 @@ for (let i = 97; i <= 122; i++) {
 }
 
 getRandomWord();
+
+// Event listener for click of 'play again' button
+playAgain.addEventListener("click", getRandomWord);

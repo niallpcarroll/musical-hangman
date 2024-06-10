@@ -145,16 +145,30 @@ const wordList = [
     },
 ];
 
+let newWord;
+
 // Get random word & question
 const getRandomWord = () => {
     const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
+newWord = word;
     console.log(word);
     document.querySelector(".question-text").innerText = hint;
     wordDisplay.innerHTML = word.split("").map(() => `<li class="letter"></li>`).join("");
 }
 
+// If / Else to check whether letter is in new word
 const beginGame = (button, clickedLetter) => {
-    console.log(button, clickedLetter);
+if(newWord.includes(clickedLetter)) {
+    // Display correct letters when selected
+    [...newWord].forEach((letter, index) => {
+        if(letter === clickedLetter) {
+            wordDisplay.querySelectorAll("li")[index].innerText = letter;
+            wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
+        }
+    })
+} else {
+    console.log(clickedLetter, "Incorrect letter!")
+}
 }
 
 // Keyboard input buttons, event listener for keyboard button click

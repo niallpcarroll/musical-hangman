@@ -68,7 +68,7 @@ The "Raleway" font is a serif font which is very neat, light and easy to read, w
 These were the original wireframe ideas for the game layout:
 
 <details open>
-<summary>Images of wireframes for mobile devices:</summary>
+<summary>Image of wireframe for mobile devices:</summary>
 
 ![Image of the wireframe for mobiles](assets/images/readme-images/mobile-wireframe.png)
 </details>
@@ -76,7 +76,7 @@ These were the original wireframe ideas for the game layout:
 
 ***
 <details>
-<summary>Images of wireframes for large screens:</summary>
+<summary>Image of wireframe for large screens:</summary>
 
 ![Image of the homepage wireframe for large screens ](assets/images/readme-images/computer-wireframe.png)
 </details>
@@ -87,7 +87,7 @@ These were the original wireframe ideas for the game layout:
 This website contains one main page:
 
 ### General Features
-**The keyboard**, is where the main user interaction takes place. It is a simple keyboard supplying only the twenty-six letters of the alphabet since other characters are unnecessary for this game. It is styled initially to display light-green buttons with a linen border, while the letters themselves are linen:
+**The keyboard**, positioned at the bottom of the screen (and to the right for larger screens), is where the main user interaction takes place. It is a simple keyboard supplying only the twenty-six letters of the alphabet since other characters are unnecessary for this game. It is styled initially to display light-green buttons with a linen border, while the letters themselves are linen:
 
 <details open>
 <summary>Screenshot of keyboard at the beginning of a game</summary>

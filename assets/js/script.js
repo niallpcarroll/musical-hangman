@@ -1,3 +1,6 @@
+/* General structure based on CodingNepal tutorial, particularly JS code for modal pop-up and reset game structure.
+ */
+
 // Game contants
 const keyboardDiv = document.querySelector(".keyboard");
 const wordDisplay = document.querySelector(".game-words");
@@ -160,23 +163,32 @@ const wordList = [{
         word: "sergei",
         question: "Rachmaninoff's first name."
     },
+    {
+        word: "gregory",
+        question: "Catholic chant named after this pope."
+    },
+    {
+        word: "clarinet",
+        question: "Mozart Concerto in A Major?"
+    },
+    {
+        word: "robert",
+        question: "Mr Schumann's first name."
+    },
+    {
+        word:"symphony",
+        question: "An extended musical composition?"
+    },
+    {
+        word: "dynamics",
+        question: "The loudness or softness of a piece?"
+    },
 ];
 
 // Variables for words, letter count
 let newWord, correctLetters,
     incorrectCount;
 const maxIncorrect = 6;
-
-// Reset game values, counter, keyboard, hangman image
-const reset = () => {
-    correctLetters = [];
-    incorrectCount = 0;
-    wordDisplay.innerHTML = newWord.split("").map(() => `<li class="letter"></li>`).join("");
-    gameModal.classList.remove("show");
-    hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
-    wrongGuess.innerText = `${incorrectCount} / ${maxIncorrect}`;
-    keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
-}
 
 // Get random word & question
 const getRandomWord = () => {
@@ -199,6 +211,17 @@ const gameOver = (winningGame) => {
         gameModal.querySelector("p").innerHTML = `${modalText} <span>${newWord}</span>`;
         gameModal.classList.add("show");
     }, 300);
+}
+
+// Reset game values, counter, keyboard, hangman image
+const reset = () => {
+    correctLetters = [];
+    incorrectCount = 0;
+    wordDisplay.innerHTML = newWord.split("").map(() => `<li class="letter"></li>`).join("");
+    gameModal.classList.remove("show");
+    hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
+    wrongGuess.innerText = `${incorrectCount} / ${maxIncorrect}`;
+    keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
 }
 
 // If / Else statement to check whether letter is in new word

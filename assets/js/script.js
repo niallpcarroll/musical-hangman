@@ -200,7 +200,7 @@ const getRandomWord = () => {
     console.log(word);
     document.querySelector(".question-text").innerText = question;
     reset();
-}
+};
 
 // Modal display if player is successful
 const gameOver = (winningGame) => {
@@ -211,7 +211,7 @@ const gameOver = (winningGame) => {
         gameModal.querySelector("p").innerHTML = `${modalText} <span>${newWord}</span>`;
         gameModal.classList.add("show");
     }, 300);
-}
+};
 
 // Reset game values, counter, keyboard, hangman image
 const reset = () => {
@@ -222,7 +222,7 @@ const reset = () => {
     hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
     wrongGuess.innerText = `${incorrectCount} / ${maxIncorrect}`;
     keyboardDiv.querySelectorAll("button").forEach(btn => btn.disabled = false);
-}
+};
 
 // If / Else statement to check whether letter is in new word
 const beginGame = (button, clickedLetter) => {
@@ -234,7 +234,7 @@ const beginGame = (button, clickedLetter) => {
                 wordDisplay.querySelectorAll("li")[index].innerText = letter;
                 wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
             }
-        })
+        });
     } else {
         // Count incorrect answers and display successive hangman images
         incorrectCount++;
@@ -247,7 +247,7 @@ const beginGame = (button, clickedLetter) => {
     // Game over function if incorrect guesses reached
     if (incorrectCount === maxIncorrect) return gameOver(false);
     if (correctLetters.length === newWord.length) return gameOver(true);
-}
+};
 
 // Keyboard input buttons event listener for keyboard button click
 for (let i = 97; i <= 122; i++) {

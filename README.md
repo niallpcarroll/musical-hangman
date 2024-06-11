@@ -246,28 +246,27 @@ CSS and HTML for all pages passed without errors.
 
 #### HTML Validation
 <details open>
-<summary>Index/Landing page HTML validation</summary> 
+<summary>index.html validation testing</summary> 
 
-![Screenshot of Index page W3C validation](./assets/readme-images/galway_index_w3c.png)
+![Screenshot of Index page W3C validation](/assets/images/readme-images/html-validation.png)
 </details>
 
-<details>
-<summary>Gallery page HTML validation</summary>
-
-![Screenshot of Gallery page W3C validation](./assets/readme-images/galway_gallery_w3c.png)
-</details>
-
-<details>
-<summary>Contact page HTML validation</summary>
-
-![Screenshot of Contact page W3C validation](./assets/readme-images/galway_contact_w3c.png)
-</details>
 
 #### CSS Validation
 <details open>
-<summary>Walking Galway History CSS validation</summary>
+<summary>CSS validation</summary>
 
-![Screenshot of CSS validation for Walking Galway History](./assets/readme-images/css_validation.png)
+![Screenshot of CSS validation](/assets/images/readme-images/css-validation.png)
+</details>
+
+#### JavaScript Testing
+* I ran the JavaScript file contents through [JSHint](https://www.jshint.com) and it did not return errors. There were some warnings about missing semicolons which were corrected.
+
+<details>
+<summary>Screenshot of JSHint result</summary>
+
+![Screenshot of JSHint result](/assets/images/readme-images/js-hint.png)
+</details>
 
 #### Lighthouse
 Lighthouse is a tool created by Google to test a website's performance, accessibility, best practices, SEO and qualification as a progressive web application.
@@ -277,49 +276,24 @@ It gives scores on the usability of the website. Tests were carried out for the 
 **The scores for a desktop device:**
 
 <details>
-<summary>Lighthouse score for Home page</summary>
+<summary>Lighthouse score for Desktop</summary>
 
-![Screenshot of the Lighthouse score for home page on desktop](./assets/readme-images/desktop_home_lighthouse.png)
-</details>
-
-<details>
-<summary>Lighthouse score for Gallery page</summary>
-
-![Screenshot of the Lighthouse score for gallery page on desktop](./assets/readme-images/desktop_gallery_lighthouse.png)
-</details>
-
-<details>
-<summary>Lighthouse score for Contact page</summary>
-
-![Screenshot of the Lighthouse score for contact page on desktop](./assets/readme-images/desktop_contact_lighthouse.png)
+![Screenshot of the Lighthouse score for desktop](/assets/images/readme-images/lighthouse-desktop.png.png)
 </details>
 
 **The scores for a mobile device:**
 
 <details>
-<summary>Lighthouse score for Home page</summary>
+<summary>Lighthouse score for Mobile</summary>
 
-![Screenshot of the Lighthouse score for home page on mobile](./assets/readme-images/mobile_home_lighthouse.png)
-</details>
-
-<details>
-<summary>Lighthouse score for Gallery page</summary>
-
-![Screenshot of the Lighthouse score for gallery page on mobile](./assets/readme-images/mobile_gallery_lighthouse.png)
-</details>
-
-<details>
-<summary>Lighthouse score for Contact page</summary>
-
-![Screenshot of the Lighthouse score for contact page on mobile](./assets/readme-images/mobile_contact_lighthouse.png)
+![Screenshot of the Lighthouse score for mobile](/assets/images/readme-images/lighthouse-mobile.png)
 </details>
 
 #### WAVE
-WAVE provides evaluation tools which help authors and web designers make their web content more accessible to people with disabilities. This is the result of testing with WAVE:
+WAVE provides evaluation tools which help authors and web designers make their web content more accessible to people with disabilities. The website did not return any errors. This is the result of testing with WAVE:
 
-![Screenshot of WAVE score result after second test](./assets/readme-images/wave_screenshot.png)
+![Screenshot of WAVE score result](/assets/images/readme-images/wave-report.png)
 
-An error appeared after the first test, indicating that a label element was missing text content. This error was corrected by adding an aria label and description to the label element in the navbar section.
 
 ### Manual Testing
 #### Features
@@ -369,7 +343,7 @@ A number of bugs were identified during the course of testing. These are outline
 | Hangman image not displaying | index.html / script.js | Replaced '' with `` |
 | Modal pop-up preventing keyboard from functioning |index.html / script.js / style.css | Altered 'pointer events' to 'none' in css |
 | Letter spaces not appearing after adding reset button | index.html / script.js | Corrected newWord variable |
-| Error page message styling not appearing correctly | index.html / style.css | Styling incorrectly placed in media query section - moved to main css section  
+| Error page message styling not appearing correctly | index.html / style.css | Styling incorrectly placed in media query section - moved to main css section | 
 
 ## Credits
 

@@ -241,8 +241,8 @@ To fork the repository:
 
 ## Testing
 ### Validator Testing
-I have used W3C validator to validate my HTML code and CSS code. I validated them via direct input.
-CSS and HTML for all pages passed without errors.
+I have used W3C validator to validate my HTML code and CSS code, and JSHint to validate JavaScript. I validated them via direct input.
+HTML, CSS and JavaScript all passed tests without errors.
 
 #### HTML Validation
 <details open>
@@ -348,7 +348,7 @@ A number of bugs were identified during the course of testing. These are outline
 ## Credits
 
 ### **Content References**
-+ This project is inspired by a tutorial from [CodingNepal](https://www.codingnepalweb.com/build-hangman-game-html-javascript/) . I acknowledge in particular assistance provided in it for the JavaScript code for the modal pop-up and the reset parameters for the game.
++ This project is inspired by a tutorial from [CodingNepal](https://www.codingnepalweb.com/build-hangman-game-html-javascript/) . I acknowledge in particular the assistance provided in it for the JavaScript code for the modal pop-up and the reset parameters for the game.
 
 + Content on JavaScript event listeners from the Love Maths project coursework.
 

@@ -21,7 +21,7 @@ body {
     justify-content: center;
     padding: 0 10px;
     min-height: 100vh;
-    background: #3a4d23;
+    /*background: #3a4d23;*/
     background-image: url(/assets/images/manuscript-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,6 +221,15 @@ p {
     margin-bottom: 10px;
     width: 50%;
     margin-left: 25%;
+}
+
+/* Style for Error 404 page */
+.container-404 {
+    text-align: center;
+}
+
+.image-404 {
+    width: 50%;
 }
 
 /* Media query for small screens - cause content to appear in column and h1 to disappear */

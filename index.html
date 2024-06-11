@@ -4,19 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musical Hangman</title>
+    <title>Classical Music Hangman</title>
+
     <!-- Link to CSS file -->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <!-- Link to main JavaScript file with defer note -->
     <script src="assets/js/script.js" defer></script>
-    <!-- Link to words & questions JavaScript file with defer note -->
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/icons8-orchestra-96.png">
 </head>
 
 <body>
-
+    <!-- Header element with game title - invisible on smaller screens -->
+    <header>
+        <h1>Classical Music Hangman!</h1>
+    </header>
     <!-- Pop-up invisible until sixth incorrect guess -->
     <div class="game-modal">
         <div class="game-end">
@@ -27,11 +31,9 @@
         </div>
     </div>
     <div class="container">
-        
+
         <div class="hangman-image">
             <img src="./assets/images/hangman-0.png" alt="hangman-0-image">
-            <!-- Game title - invisible on smaller screens -->
-           <h1 class="title">Musical Hangman!</h1>
         </div>
         <div class="game-box">
             <ul class="game-words">
@@ -46,11 +48,9 @@
             </div>
             <!-- Keyboard input -->
             <div class="keyboard">
-
             </div>
         </div>
     </div>
-
 </body>
 
 </html>

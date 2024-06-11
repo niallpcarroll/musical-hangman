@@ -21,13 +21,20 @@ body {
     justify-content: center;
     padding: 0 10px;
     min-height: 100vh;
-    /*background: #3a4d23;*/
     background-image: url(../images/manuscript-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
+
+header {
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+    padding: 20px;
+    pointer-events: none;
+ }
 
 .container {
     width: 90vw;
@@ -46,12 +53,12 @@ h1 {
     font-size: 1.5rem;
     border: 2px solid linen;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 40px 10px 40px;
     text-transform: uppercase;
     text-align: center;
     margin-top: 10px;
     background: #3a4d23;
-}
+} 
 
 .game-words {
     display: flex;
@@ -120,6 +127,7 @@ p {
     padding: 5px;
 }
 
+/* Keyboard button appearance after selection */
 .keyboard button[disabled] {
     pointer-events: none;
     opacity: 0.5;
@@ -232,7 +240,7 @@ p {
     width: 50%;
 }
 
-/* Media query for small screens - cause content to appear in column and h1 to disappear */
+/* Media query for small screens - cause content to appear in column and header to disappear */
 @media (max-width: 782px) {
     .container {
         flex-direction: column;
@@ -244,10 +252,12 @@ p {
         max-width: 200px;
     }
 
-    .hangman-image h1 {
+    /* Header disappears on smaller screens */
+    header {
         display: none;
     }
 
+    /* Game pop-up appearance */
     .game-modal {
         width: 100%;
         margin: 0;

@@ -256,6 +256,7 @@ p {
         background: #1a230f;
         color: #FAF0E6;
         border: 2px solid #FAF0E6;
+        z-index: 999;
     }
 
     /* Header disappears on smaller screens */

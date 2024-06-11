@@ -16,7 +16,7 @@ Find the link to the site [here](https://niallpcarroll.github.io/musical-hangman
   - [Imagery](#imagery)
   - [Wireframes](#wireframes)
 - [Features](#features)
-  - [General Features on Each page](#general-features-on-each-page)
+  - [General Features](#general-features)
   - [Future Implementations](#future-implementations)
   - [Accessibility](#accessibility)
 - [Technologies Used](#technologies-used)
@@ -86,7 +86,7 @@ These were the original wireframe ideas for the game layout:
 ## Features
 This website contains one main page:
 
-### General Features on each page
+### General Features
 **The keyboard**, is where the main user interaction takes place. It is a simple keyboard supplying only the twenty-six letters of the alphabet since other characters are unnecessary for this game. It is styled initially to display light-green buttons with a linen border, while the letters themselves are linen:
 
 <details open>

@@ -252,6 +252,12 @@ p {
         max-width: 200px;
     }
 
+    .error-text {
+        background: #1a230f;
+        color: #FAF0E6;
+        border: 2px solid #FAF0E6;
+    }
+
     /* Header disappears on smaller screens */
     header {
         display: none;

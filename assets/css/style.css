@@ -240,6 +240,13 @@ p {
     width: 50%;
 }
 
+.error-div {
+        background: #1a230f;
+        color: #FAF0E6;
+        border: 2px solid #FAF0E6;
+        z-index: 999;
+    }
+
 /* Media query for small screens - cause content to appear in column and header to disappear */
 @media (max-width: 782px) {
     .container {
@@ -250,13 +257,6 @@ p {
 
     .hangman-image img {
         max-width: 200px;
-    }
-
-    .error-div {
-        background: #1a230f;
-        color: #FAF0E6;
-        border: 2px solid #FAF0E6;
-        z-index: 999;
     }
 
     /* Header disappears on smaller screens */

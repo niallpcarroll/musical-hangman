@@ -22,11 +22,16 @@ body {
     padding: 0 10px;
     min-height: 100vh;
     background: #3a4d23;
+    background-image: url(/assets/images/manuscript-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .container {
     width: 90vw;
-    background: #1a230f;
+    background: rgba(26,35,15, 0.8);
     display: flex;
     padding: 20px;
     border-radius: 10px;

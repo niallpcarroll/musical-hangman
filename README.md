@@ -186,6 +186,7 @@ There is plenty of potential for future development of this game. Some features 
 The website is designed to be accessible. Measures taken to ensure this include:
 - Design which aims to minimise clutter, avoiding overload of images and text.
 - High colour contrast between background and text.
+- Hover and click features on buttons to highlight or alter appearance. 
 - Clearly defined text areas.
 - Alt attributes on all images.
 
@@ -271,7 +272,7 @@ HTML, CSS and JavaScript all passed tests without errors.
 #### Lighthouse
 Lighthouse is a tool created by Google to test a website's performance, accessibility, best practices, SEO and qualification as a progressive web application.
 
-It gives scores on the usability of the website. Tests were carried out for the Home, Gallery and Contact pages for the mobile version and the desktop version. Overall the scores for desktop devices are good, but performance is weaker for mobile devices, most likely due to some images being larger than necessary.
+It gives scores on the usability of the website. Tests were carried out for the mobile version and the desktop version. Overall the scores are good, but performance is lacking, particularly for mobile devices - this could likely be improved in a future deployment by resizing images.
 
 **The scores for a desktop device:**
 

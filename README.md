@@ -279,7 +279,7 @@ It gives scores on the usability of the website. Tests were carried out for the 
 <details>
 <summary>Lighthouse score for Desktop</summary>
 
-![Screenshot of the Lighthouse score for desktop](/assets/images/readme-images/lighthouse-desktop.png.)
+![Screenshot of the Lighthouse score for desktop](/assets/images/readme-images/lighthouse-desktop.png)
 </details>
 
 **The scores for a mobile device:**

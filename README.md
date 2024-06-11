@@ -339,9 +339,10 @@ A number of bugs were identified during the course of testing. These are outline
 
 | Bug | Section | Fix |
 |---|---|---|
-| getRandomWord function not working | index.html / script.js | Moved questions from words.js to script.js |
-| Question & keyboard no appearing | index.html / script.js | Corrected spelling error in script.js |
-| Hangman image not displaying | index.html / script.js | Replaced '' with `` |
+| getRandomWord function not working | index.html / script.js | Moved questions from words.js to script.js. Deleted words.js |
+| Question & keyboard not appearing | index.html / script.js | Corrected spelling error in script.js |
+| Questions not showing | index.html / script.js | Incorrectly used element 'p' in JS line 201. Replaced with class |
+| Hangman image not displaying | index.html / script.js | Incorrectly used '' in JS line 224. Replaced with `` |
 | Modal pop-up preventing keyboard from functioning |index.html / script.js / style.css | Altered 'pointer events' to 'none' in css |
 | Letter spaces not appearing after adding reset button | index.html / script.js | Corrected newWord variable |
 | Error page message styling not appearing correctly | index.html / style.css | Styling incorrectly placed in media query section - moved to main css section | 

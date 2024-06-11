@@ -335,15 +335,15 @@ Below is a table with different browsers which records the result of appearance 
 |Brave |Yes |Yes |
 
 #### Bugs
-A number of bugs were identified during the course of testing. These are outlined below:
+A number of bugs were identified during the course of testing. These are documented below:
 
 | Bug | Section | Fix |
 |---|---|---|
 | getRandomWord function not working | index.html / script.js | Moved questions from words.js to script.js. Deleted words.js |
-| Question & keyboard not appearing | index.html / script.js | Corrected spelling error in script.js |
+| Question & keyboard not appearing | index.html / script.js | Corrected spelling error in JS line 6 |
 | Questions not showing | index.html / script.js | Incorrectly used element 'p' in JS line 201. Replaced with class |
 | Hangman image not displaying | index.html / script.js | Incorrectly used '' in JS line 224. Replaced with `` |
-| Modal pop-up preventing keyboard from functioning |index.html / script.js / style.css | Altered 'pointer events' to 'none' in css |
+| Modal pop-up (when hidden) preventing keyboard from functioning |index.html / script.js / style.css | Altered 'pointer events' to 'none' in css |
 | Letter spaces not appearing after adding reset button | index.html / script.js | Corrected newWord variable |
 | Error page message styling not appearing correctly | index.html / style.css | Styling incorrectly placed in media query section - moved to main css section | 
 

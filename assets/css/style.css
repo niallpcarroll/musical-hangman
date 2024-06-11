@@ -22,7 +22,7 @@ body {
     padding: 0 10px;
     min-height: 100vh;
     /*background: #3a4d23;*/
-    background-image: url(images/manuscript-background.jpg);
+    background-image: url(assets/images/manuscript-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

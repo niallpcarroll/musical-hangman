@@ -243,7 +243,10 @@ const beginGame = (button, clickedLetter) => {
         hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
     }
 
+    // Disable keyboard button when clicked once
     button.disabled = true;
+
+    // Enable counter when incorrect letter selected
     wrongGuess.innerText = `${incorrectCount} / ${maxIncorrect}`;
 
     // Game over function if incorrect guesses reached

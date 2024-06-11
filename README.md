@@ -1,6 +1,6 @@
-# Musical 'Hangman' Game
+# Classical Music 'Hangman' Game
 
-This project is designed to be an interactive and fun game, based on the traditional 'hangman' game but with specifically musical theme.
+This project is designed to be an interactive and fun game, based on the traditional 'hangman' game but with the specific theme of classical music.
 
 Find the link to the site [here](https://niallpcarroll.github.io/musical-hangman/)
 
@@ -37,9 +37,9 @@ Find the link to the site [here](https://niallpcarroll.github.io/musical-hangman
 Musical Hangman is intended to be an easy-to-use, simple and fun game. The design is uncluttered, displaying only what is necessary for the game, making its use self-explanatory. As it is entirely focused on the subject of music, there is a clear educational function to it as it could be used by children and older music students.
 
 ### User Stories
-The website should be very straightforward for the user - the objective of the game is self-explanatory: there is a keyboard display, indications as to the length of the answer, and a counter for wrong answers. The pop-up gives a clear option to re-start the game.
+* The website should be very straightforward for the user - the objective of the game is self-explanatory: there is a keyboard display, indications as to the length of the answer, and a counter for wrong answers. The pop-up gives a clear option to re-start the game.
 
-* The user wants a game which can be played more than once. The JavaScript code currently includes thirty questions and answers, which are chosen at random, so the game can be played multiple times.
+* The user wants a game which can be played more than once. The JavaScript code currently includes over forty questions and answers, which are chosen at random, so the game can be played multiple times.
 
 ## Design
 ### Colour Scheme
@@ -58,9 +58,11 @@ The website uses one font throughout: "Raleway".
 The "Raleway" font is a serif font which is very neat, light and easy to read, while not appearing overly formal in its style.
 
 ### Imagery
-The only imagery currently employed on the website is a series of seven simple images drawn by the author to depict the progression of the hangman image. Here is the final image which displays before the game ends if the player is unsuccessful:
+* The main imagery currently employed on the website is a series of seven simple images drawn by the author to depict the progression of the hangman image. Here is the final image which displays before the game ends if the player is unsuccessful:
 
-![Screenshot of some of the images on the site](assets/images/readme-images/hangman-6.png)
+![Screenshot of one of the images on the site](assets/images/readme-images/hangman-6.png)
+
+* For visual appeal and contrast, particularly on large screens, there is a background featuring music manuscript paper and notation. The main colour behind the game itself (#1a230f), however, is only slightly opaque to allow this image to be barely visible while not distracting from the game itself or negatively affecting the contrast with the text colour. 
 
 ### Wireframes 
 These were the original wireframe ideas for the game layout:
@@ -82,26 +84,47 @@ These were the original wireframe ideas for the game layout:
 ***
 
 ## Features
-This website contains three pages:
-- Home page
-- Gallery page
-- Contact page
+This website contains one main page:
 
 ### General Features on each page
-**The header**, which displays the name of the website, sticks to the top of the viewport. On smaller screens there is a dropdown menu from a "burger" icon, which the user can employ to navigate to other pages on the website. On larger screens the dropdown menu opens out across the header, providing clear navigation buttons. Here is an image of the header with the opened menu as it appears on a mobile device:
+**The keyboard**, is where the main user interaction takes place. It is a simple keyboard supplying only the twenty-six letters of the alphabet since other characters are unnecessary for this game. It is styled initially to display light-green buttons with a linen border, while the letters themselves are linen:
 
 <details open>
-<summary>Screenshot of the Header</summary>
+<summary>Screenshot of keyboard at the beginning of a game</summary>
 
-![Screenshot of the website's header](./assets/readme-images/galway_header.png)
+![Screenshot of keyboard](/assets/images/readme-images/keyboard-start.png)
 </details>
 
-**The footer** contains links to Facebook, YouTube and Instagram to encourage visitors to keep in contact via social media. It provides easy access to social media links for users as it is stuck to the bottom of the viewport:
+On devices where the game is played with a mouse, the buttons will respond by changing colour when the mouse is hovered over them:
 
-<details open>
-<summary>Screenshot of the Footer</summary>
+<details>
+<summary>Screenshot of keyboard when mouse is hovered over key</summary>
 
-![Screenshot of the website's footer](./assets/readme-images/galway_footer.png)
+![Screenshot of keyboard hover](/assets/images/readme-images/keyboard-hover.png)
+</details>
+
+When a keyboard button is clicked, the button becomes transparent, the border disappears, the letter turns dark-orange, and the button cannot be clicked again:
+
+<details>
+<summary>Screenshot of keyboard when button is clicked</summary>
+
+![Screenshot of clicked keyboard button](/assets/images/readme-images/keyboard-clicked.png)
+</details>
+
+**Letter Spaces** display above the question and tell the user how many letters the answer contains. When a correct letter is selected on the keyboard, it appears in the correct letter space (or spaces if the same letter occurs more than once) and the line denoting the space disappears:
+
+<details>
+<summary>Screenshot of correct letters placed in the answer section</summary>
+
+![Screenshot of letters in answer section](/assets/images/readme-images/answers.png)
+</details>
+
+**The counter** keeps track of incorrect letters chosen by the player. It is displayed in dark-orange directly above the keyboard. A player may have six incorrect guesses before the game ends:
+
+<details>
+<summary>Screenshot counter recording incorrect three incorrect guesses</summary>
+
+![Screenshot of incorrect guess counter](/assets/images/readme-images/wrong-counter.png)
 </details>
 
 ### The Home page
@@ -319,8 +342,8 @@ Below is a table with the website's features, detailing how it has been tested a
 |Keyboard |Click 6 incorrect letters |Pop-up message appears with image, correct answer & replay button |
 |Keyboard |Correct answer input |Pop-up message appears with image, correct answer & replay button |
 |Replay button |Click |New game begins |
-
 |Error page |Attempt navigation to non-existent page |Error page and message displays |
+|Error page |Click on link to return to game |Returns user to game |
 
 #### Screen size compability
 Below is a table with different devices and the outcomes when visiting the website using different screen sizes.
@@ -351,31 +374,27 @@ A number of bugs were identified during the course of testing. These are outline
 | Question & keyboard no appearing | index.html / script.js | Corrected spelling error in script.js |
 | Hangman image not displaying | index.html / script.js | Replaced '' with `` |
 | Modal pop-up preventing keyboard from functioning |index.html / script.js / style.css | Altered 'pointer events' to 'none' in css |
-| Letter spaces not appearing after adding reset button | index.html / script.js | Corrected newWord variable |  
+| Letter spaces not appearing after adding reset button | index.html / script.js | Corrected newWord variable |
+| Error page message styling not appearing correctly | index.html / style.css | Styling incorrectly placed in media query section - moved to main css section  
 
 ## Credits
 
 ### **Content References**
-+ The code for the nav bar (along with its responsive CSS styling) and the footer is adapted from the Love Running project (link to Github repository: https://github.com/niallpcarroll/love-running-project.git).
++ This project is inspired by a tutorial from [CodingNepal](https://www.codingnepalweb.com/build-hangman-game-html-javascript/) . I acknowledge in particular assistance provided in it for the JavaScript code for the modal pop-up and the reset parameters for the game.
 
-+ [Code Institute](https://codeinstitute.net/ie/) for general HTML and CSS learning material.
++ Content on JavaScript event listeners from the Love Maths project coursework.
 
-+ The code for the hero image below the nav bar is adapted from the tutorial at W3Schools (https://www.w3schools.com/howto/howto_css_hero_image.asp).
++ [Code Institute](https://codeinstitute.net/ie/) for general JavaScript learning material.
 
-+ Guidance on column breaks in CSS came from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside).
-
-+ My mentor, Dario Carrasquel, gave guidance on creating the Confirmation page with code for automatic return to Home page.
-    
 + Apart from references listed above, the code and content of the website is written by myself.
 
 ### Media
-+ Icons used throughout this website are freely available from [Font Awesome](https://fontawesome.com).
 
 + [Icons 8](https://icons8.com) for the Favicon image.
 
-+ [Google Maps](https://maps.google.com) for the map linked in the Home page.
++ The background image of music manuscript, both of the modal images, and the error page image, were freely available from [Pexels](https://www.pexels.com) .
 
-+ All images - background photographs and gallery images - are my own.
++ The hangman images are my own using screenshots from Microsoft Paint app.
 
 ### Acknowledgments
-I wish to acknowledge the support and encouragement given by Code Institute staff, particularly to Amy and to Lewis in Tutor Support, and my peers throughout this project. I also acknowledge the invaluable advice and guidance given by my mentor, Mr Dario Carrasquel.
+I wish to acknowledge the support and encouragement given by Code Institute staff, particularly to Amy and my peers throughout this project. I also acknowledge the invaluable advice and guidance given by my mentor, Mr Dario Carrasquel.

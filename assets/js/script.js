@@ -204,6 +204,7 @@ const getRandomWord = () => {
 
 // Modal display if player is successful
 const gameOver = (winningGame) => {
+    // Based on code from CodingNepal tutorial
     setTimeout(() => {
         const modalText = winningGame ? `Correct! The word was:` : `The correct word was:`;
         gameModal.querySelector("img").src = `assets/images/${winningGame ? 'winner': 'game_over'}.jpg`;
@@ -214,6 +215,7 @@ const gameOver = (winningGame) => {
 };
 
 // Reset game values, counter, keyboard, hangman image
+// Based on example from CodingNepal tutorial
 const reset = () => {
     correctLetters = [];
     incorrectCount = 0;

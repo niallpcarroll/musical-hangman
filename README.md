@@ -127,59 +127,54 @@ When a keyboard button is clicked, the button becomes transparent, the border di
 ![Screenshot of incorrect guess counter](/assets/images/readme-images/wrong-counter.png)
 </details>
 
-### The Home page
-**The Home page** aims to give the visitor clear information about the walking history tours, including times and other considerations (e.g. accessibility). It employs two background images of Galway city. These images are in black and white - apart from giving an appropriate "antiquated" feel, they do not distract the viewer from the main content, thus avoiding a visual overload.
-
-On larger screens the text divs are ordered so as to be slightly offset from each other - this is to avoid the screen appearing too text-heavy, while also revealing different sections of the background image as the user scrolls through the page. On larger screens, the "Home" button in the menu is underlined. On smaller screens, the text areas appear in a single column - however, the light-coloured border is designed to give emphasis to the individual text areas to avoid the impression that there is one single block of text. The icons and the headings give a clear focus to the content of each text area.
-
-<details open>
-<summary>Screenshot of the Home page</summary>
-
-![Screenshot of the website's landing page](./assets/readme-images/galway_landing_page.png)
-</details>
-
-### The Gallery page
-**The Gallery page** is designed to give the visitor a preview of some of the historical sites they will visit in the course of the walk. With the aim of encouraging viewers to visit the sites in person, there is some text beneath each image which asks a question which will be answered on the tour.
-
-On smaller devices, the images appear in a single column, increasing to two columns and then three for larger screens. On larger screens, the "Gallery" button in the menu is underlined. The background colour for the gallery page is dark blue (#0c2b80) - there is no black and white image of Galway employed as in the home and contact pages in order to avoid the gallery page being too cluttered with layers of imagery. However, with the use of the background colour (#0c2b80) and the light-coloured (#fffafa) image borders, the page remains stylistically consistent with the other pages of the website.
-
-<details open>
-<summary>Screenshot of the Gallery page</summary>
-
-![Screenshot of the website's gallery page](./assets/readme-images/galway_gallery_page.png)
-</details>
-
-### The Contact page
-**The Contact page** is designed to engage visitors, giving them the option to make an enquiry or to sign up for newsletters or details of occasional related events.
-
-As with the home page, the contact page utilises a black and white image for the background, while the text of the contact section lies on a transparent dark blue area. On larger screens, the "Contact Us" button is underlined when the user is on this page. A hover feature on larger screens highlights the name and e-mail address input areas, while the colours of the "submit" button are reversed when the cursor is hovered over the button. 
-
-<details open>
-<summary>Screenshot of the Contact page</summary>
-
-![Screenshot of the website's contact page](./assets/readme-images/galway_contact_page.png)
-</details>
-
-### The Confirmation page
-**The Confirmation page** is a page to which the user will be taken after they submit the contact form. It has the same general style as the other pages, and the text will confirm that their message has been submitted successfully. It is designed to automatically return the user to the home page in ten seconds.
+**The hangman image** changes along with the counter according to how many incorrect guesses the player makes:
 
 <details>
-<summary>Screenshot of Confirmation page</summary>
+<summary>Screenshot of hangman image after three incorrect guesses</summary> 
 
-![Screenshot of the website's confirmation page](./assets/readme-images/galway_confirmation.png)
+![Screenshot after three incorrect guesses](/assets/images/readme-images/three-wrong.png)
 </details>
 
+<details>
+<summary>Screenshot of hangman image after four incorrect guesses</summary>
+
+![Screenshot after four incorrect guesses](/assets/images/readme-images/four-wrong.png)
+</details>
+
+**The Modal** pop-up appears when the game ends. If the player successfully guesses the correct answer, the pop-up will display a medal image with a congratulatory message. On the other hand, if the player makes six incorrect choices, the hangman image will be complete, and the appearing pop-up will display a "game over" image and the correct answer.
+
+<details open>
+<summary>Screenshot of pop-up after guessing the correct word</summary>
+
+![Screenshot of game-win pop-up](/assets/images/readme-images/game-win.png)
+</details>
+
+<details>
+<summary>Screenshot of pop-up after choosing six incorrect letters</summary>
+
+![Screenshot of pop-up after losing game](/assets/images/readme-images/game-over.png)
+</details>
+
+**The Play Again** button appears at the bottom of the modal. Clicking it will begin a new game by resetting the counter, keyboard, and hangman image, and selecting a new question.
+
+<details>
+<summary>Screenshot of "Play Again" button on modal</summary>
+
+![Screenshot of "Play Again" button](/assets/images/readme-images/play-again.png)
+</details>
+
+
 ### The Error page
-**The Error page** will appear if a page does not load or if the user attempts to access a non-existent page on the website. This page is styled in the same general way as the rest of the website, and the message which appears provides a link through which the user can return to the homepage.
+**The Error page** will appear if a page does not load or if the user attempts to access a non-existent page on the website. This page is styled in the same general way as the rest of the website, and the message which appears provides a link through which the user can return to the homepage to begin a new game.
 
 <details>
 <summary>Screenshot of Error 404 page</summary>
 
-![Screenshot of the website's error 404 page](./assets/readme-images/error_page.png)
+![Screenshot of the website's error 404 page](/assets/images/readme-images/error-page.png)
 </details>
 
 ### Responsive Design
-The game display is designed to be responsive throughout - the design changes to be more compatible depending on which screen size the visitor uses. On mobile devices, content appears in a single column, while the game title disappears to avoid pushing the game off the screen. On larger devices the content of the home page spreads out to take up more of the available space, with the hangman image appearing on the left and the keyboard, questions and letter spaces appearing on the right.
+The game display is designed to be responsive throughout - the design changes to be more compatible depending on which screen size the visitor uses. On mobile devices, content appears in a single column, while the game title disappears to allow more space for the game itself. On larger devices the content of the home page spreads out to take up more of the available space, with the hangman image appearing on the left and the keyboard, questions and letter spaces appearing on the right.
 
 ### Future Implementations
 There is plenty of potential for future development of this game. Some features that are planned but not yet executed are:
@@ -193,7 +188,6 @@ The website is designed to be accessible. Measures taken to ensure this include:
 - High colour contrast between background and text.
 - Clearly defined text areas.
 - Alt attributes on all images.
-- Aria labels on all icons.
 
 ## Technologies Used
 
@@ -217,7 +211,7 @@ This website has been created using HTML and CSS and JavaScript.
 Github pages is used to deploy this site. To deploy the site yourself, follow these instructions:
 
 1. Sign in to Github.
-2. Go to the repository for this project called [*walking-galway-history*](https://github.com/niallpcarroll/musical-hangman.git).
+2. Go to the repository for this project called [*musical-hangman*](https://github.com/niallpcarroll/musical-hangman.git).
 3. Click *settings*.
 4. In the column to the left, click *pages*.
 5. From the dropdown, select *main branch* and then save.

@@ -10,7 +10,7 @@ const gameModal = document.querySelector(".game-modal");
 const playAgain = document.querySelector(".replay-btn");
 
 
-// List of questions-hints and answers
+// List of questions and answers
 const wordList = [{
         word: "vivaldi",
         question: "Composer known as 'The Red Priest'."
@@ -49,7 +49,7 @@ const wordList = [{
     },
     {
         word: "slavonic",
-        question: "Famous dances by Dvořák"
+        question: "Famous dances by Dvořák."
     },
     {
         word: "trout",
@@ -57,7 +57,7 @@ const wordList = [{
     },
     {
         word: "giuseppe",
-        question: "First name of composer Verdi"
+        question: "First name of composer Verdi."
     },
     {
         word: "gershwin",

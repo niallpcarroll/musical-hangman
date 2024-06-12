@@ -299,7 +299,7 @@ WAVE provides evaluation tools which help authors and web designers make their w
 
 ### Manual Testing
 #### Features
-Below is a table with the website's features, detailing how it has been tested and the outcomes of testing:
+Below is a table with the game's features, detailing how it has been tested and the outcomes of testing:
 
 |Feature|Test case|Outcome|
 |---|---|---|
@@ -315,7 +315,7 @@ Below is a table with the website's features, detailing how it has been tested a
 |Error page |Attempt navigation to non-existent page |Error page and message displays |
 |Error page |Click on link to return to game |Returns user to game |
 
-#### Screen size compability
+#### Screen size compatibility
 Below is a table with different devices and the outcomes when visiting the website using different screen sizes.
 
 |Device|Responsive <782px|Responsive 782px to 991px|Responsive 992px to 1919px|Responsive >=1920px| Renders as expected |
@@ -325,7 +325,7 @@ Below is a table with different devices and the outcomes when visiting the websi
 |Laptop (1366px wide) |n/a |n/a |Yes |n/a |Yes |
 |Desktop (1920px wide) |n/a |n/a |n/a |Yes |Yes |
 
-#### Browser compability
+#### Browser compatibility
 Below is a table with different browsers which records the result of appearance and responsiveness of the website: 
 
 |Browser|Intended Appearance|Intended Responsiveness|

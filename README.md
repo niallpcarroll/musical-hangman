@@ -4,6 +4,7 @@ This project is designed to be an interactive and fun game, based on the traditi
 
 Find the link to the site [here](https://niallpcarroll.github.io/musical-hangman/)
 
+* These are images of the game as it appears on different devices:
 ![Image of the site depicted on different devices](assets/images/readme-images/am-i-responsive.png)
 
 ## Contents
@@ -366,6 +367,8 @@ A number of bugs were identified during the course of testing. These are documen
 + The background image of music manuscript, both of the modal images, and the error page image, were freely available from [Pexels](https://www.pexels.com).
 
 + The hangman images are my own using screenshots from Microsoft Paint app.
+
++ [AmIResponsive](https://ui.dev/amiresponsive) for device responsivity image in README file.
 
 ### Acknowledgments
 I wish to acknowledge the support and encouragement given by Code Institute staff, particularly to Amy and my peers throughout this project. I also acknowledge the invaluable advice and guidance given by my mentor, Mr Dario Carrasquel. Thanks to those who tested the game and offered suggestions, particularly with regard to its visual elements.

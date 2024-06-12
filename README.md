@@ -34,7 +34,7 @@ Find the link to the site [here](https://niallpcarroll.github.io/musical-hangman
   - [Acknowledgments](#acknowledgments)
 
 ## User Experience
-Musical Hangman is intended to be an easy-to-use, simple and fun game. The design is uncluttered, displaying only what is necessary for the game, making its use self-explanatory. As it is entirely focused on the subject of music, there is a clear educational function to it as it could be used by children and older music students.
+Musical Hangman is intended to be an easy-to-use, simple and fun game. The design is uncluttered, displaying only what is necessary for the game, making its use self-explanatory. Borne out of a personal interest of mine - music - it has classical music as its theme. As it is entirely focused on the subject of music, there is a clear educational function to it as it could be used by children and older music students.
 
 ### User Stories
 * The website should be very straightforward for the user - the objective of the game is self-explanatory: there is a keyboard display, indications as to the length of the answer, and a counter for wrong answers. The pop-up gives a clear option to re-start the game.
@@ -181,10 +181,11 @@ There is plenty of potential for future development of this game. Some features 
 - It will be very easy to add questions to the current list in JavaScript. 
 - The possibility of adding difficulty levels, such as 'easy', 'medium', and 'difficult' to appeal to players of different ages and experience.
 - The possibility of adding audio and visual clues instead of text questions alone.
+- Since the general format of the game is well-known, I felt there was no need to employ an instruction page. However, in future deployments this could be useful, particularly if there are different levels of play introduced or if each game were to be extended in some way.
 
 ### Accessibility
 The website is designed to be accessible. Measures taken to ensure this include:
-- Design which aims to minimise clutter, avoiding overload of images and text.
+- Design aims to be uncluttered, with only the necessary elements present - this particularly aids accessibility on smaller screens upon which the game is more likely to be played.
 - High colour contrast between background and text.
 - Hover and click features on buttons to highlight or alter appearance. 
 - Clearly defined text areas.
@@ -272,7 +273,7 @@ HTML, CSS and JavaScript all passed tests without errors.
 #### Lighthouse
 Lighthouse is a tool created by Google to test a website's performance, accessibility, best practices, SEO and qualification as a progressive web application.
 
-It gives scores on the usability of the website. Tests were carried out for the mobile version and the desktop version. Overall the scores are good, but performance is lacking, particularly for mobile devices - this could likely be improved in a future deployment by resizing images.
+It gives scores on the useability of the website. Tests were carried out for the mobile version and the desktop version. Overall the scores are good, but performance is lacking, particularly for mobile devices - this could likely be improved in a future deployment by resizing images.
 
 **The scores for a desktop device:**
 
@@ -352,7 +353,7 @@ A number of bugs were identified during the course of testing. These are documen
 ### **Content References**
 + This project is inspired by a tutorial from [CodingNepal](https://www.codingnepalweb.com/build-hangman-game-html-javascript/) . I acknowledge in particular the assistance provided in it for the JavaScript code for the modal pop-up and the reset parameters for the game.
 
-+ Content on JavaScript event listeners from the Love Maths project coursework.
++ Content on JavaScript event listeners from the Love Maths project coursework (Code Institute).
 
 + [Code Institute](https://codeinstitute.net/ie/) for general JavaScript learning material.
 
@@ -362,9 +363,9 @@ A number of bugs were identified during the course of testing. These are documen
 
 + [Icons 8](https://icons8.com) for the Favicon image.
 
-+ The background image of music manuscript, both of the modal images, and the error page image, were freely available from [Pexels](https://www.pexels.com) .
++ The background image of music manuscript, both of the modal images, and the error page image, were freely available from [Pexels](https://www.pexels.com).
 
 + The hangman images are my own using screenshots from Microsoft Paint app.
 
 ### Acknowledgments
-I wish to acknowledge the support and encouragement given by Code Institute staff, particularly to Amy and my peers throughout this project. I also acknowledge the invaluable advice and guidance given by my mentor, Mr Dario Carrasquel.
+I wish to acknowledge the support and encouragement given by Code Institute staff, particularly to Amy and my peers throughout this project. I also acknowledge the invaluable advice and guidance given by my mentor, Mr Dario Carrasquel. Thanks to those who tested the game and offered suggestions, particularly with regard to its visual elements.

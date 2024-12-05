@@ -8,8 +8,16 @@ const wrongGuess = document.querySelector(".wrong-guess");
 const hangmanImage = document.querySelector(".hangman-image img");
 const gameModal = document.querySelector(".game-modal");
 const playAgain = document.querySelector(".replay-btn");
-const correctAudio = new Audio(".sounds/correct-violin.wav")
 
+function correctSound(){
+    let correctViolin = new Audio ('sounds/correct-violin.mp3');
+    correctViolin.play();
+    }    
+ 
+function incorrectSound() {
+    let incorrectViolin = new Audio ('sounds/incorrect-violin.mp3');
+    incorrectViolin.play();
+}    
 
 // List of questions and answers
 const wordList = [{
@@ -236,7 +244,6 @@ const beginGame = (button, clickedLetter) => {
                 correctLetters.push(letter);
                 wordDisplay.querySelectorAll("li")[index].innerText = letter;
                 wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
-               
             }
         });
     } else {
@@ -244,8 +251,6 @@ const beginGame = (button, clickedLetter) => {
         incorrectCount++;
         hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
     }
-
-
       
 
     // Disable keyboard button when clicked once

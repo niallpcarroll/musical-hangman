@@ -9,15 +9,10 @@ const hangmanImage = document.querySelector(".hangman-image img");
 const gameModal = document.querySelector(".game-modal");
 const playAgain = document.querySelector(".replay-btn");
 
-function correctSound(){
-    let correctViolin = new Audio ('sounds/correct-violin.mp3');
-    correctViolin.play();
-    }    
- 
-function incorrectSound() {
-    let incorrectViolin = new Audio ('sounds/incorrect-violin.mp3');
-    incorrectViolin.play();
-}    
+let correctSound = new Audio('assets/sounds/correct-violin.mp3');
+let incorrectSound = new Audio('assets/sounds/incorrect-violin.mp3');
+
+
 
 // List of questions and answers
 const wordList = [{
@@ -238,16 +233,20 @@ const reset = () => {
 // If / Else statement to check whether letter is in new word
 const beginGame = (button, clickedLetter) => {
     if (newWord.includes(clickedLetter)) {
-        // Display correct letters when selected
+        
+        // Display correct letters when selected; sound for correct letter
         [...newWord].forEach((letter, index) => {
             if (letter === clickedLetter) {
+                correctSound.play();
                 correctLetters.push(letter);
                 wordDisplay.querySelectorAll("li")[index].innerText = letter;
                 wordDisplay.querySelectorAll("li")[index].classList.add("guessed");
+                
             }
         });
     } else {
-        // Count incorrect answers and display successive hangman images
+        // Count incorrect answers and display successive hangman images; sound for incorrect letter
+        incorrectSound.play();
         incorrectCount++;
         hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
     }
@@ -263,6 +262,7 @@ const beginGame = (button, clickedLetter) => {
     if (incorrectCount === maxIncorrect) return gameOver(false);
     if (correctLetters.length === newWord.length) return gameOver(true);
 };
+
 
 // Keyboard input buttons event listener for keyboard button click
 // This code is from CodingNepal tutorial

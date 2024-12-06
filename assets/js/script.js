@@ -1,7 +1,7 @@
 /* General structure based on CodingNepal tutorial, particularly JS code for modal pop-up and reset game structure.
  */
 
-// Game contants
+// Game constants
 const keyboardDiv = document.querySelector(".keyboard");
 const wordDisplay = document.querySelector(".game-words");
 const wrongGuess = document.querySelector(".wrong-guess");
@@ -11,6 +11,8 @@ const playAgain = document.querySelector(".replay-btn");
 
 let correctSound = new Audio('assets/sounds/correct-violin.mp3');
 let incorrectSound = new Audio('assets/sounds/incorrect-violin.mp3');
+
+
 
 
 

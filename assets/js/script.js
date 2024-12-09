@@ -2,6 +2,7 @@
  */
 
 // Game constants
+const modal = document.getElementById("start");
 const keyboardDiv = document.querySelector(".keyboard");
 const wordDisplay = document.querySelector(".game-words");
 const wrongGuess = document.querySelector(".wrong-guess");
@@ -13,7 +14,9 @@ let correctSound = new Audio('assets/sounds/correct-violin.mp3');
 let incorrectSound = new Audio('assets/sounds/incorrect-violin.mp3');
 
 
-
+window.onload=(event)=>{
+    setTimeout(()=>modal.classList.add("start-game.show"), 2000)
+}
 
 
 // List of questions and answers
@@ -190,6 +193,7 @@ const wordList = [{
         question: "The loudness or softness of a piece?"
     },
 ];
+
 
 // Variables for words, letter count
 let newWord, correctLetters,

@@ -2,7 +2,6 @@
  */
 
 // Game constants
-const modal = document.getElementById("start");
 const keyboardDiv = document.querySelector(".keyboard");
 const wordDisplay = document.querySelector(".game-words");
 const wrongGuess = document.querySelector(".wrong-guess");
@@ -12,11 +11,19 @@ const playAgain = document.querySelector(".replay-btn");
 
 let correctSound = new Audio('assets/sounds/correct-violin.mp3');
 let incorrectSound = new Audio('assets/sounds/incorrect-violin.mp3');
+let failSound = new Audio('assets/sounds/trumpet-fail.mp3');
 
 
 window.onload=(event)=>{
-    setTimeout(()=>modal.classList.add("start-game.show"), 2000)
-}
+    setTimeout(()=> {
+    gameModal.querySelector("img").src = `assets/images/hangman-start-image.jpg`;   
+    gameModal.querySelector("h3").innerText = `Let's play Musical Hangman!`;
+    gameModal.querySelector("p").innerText = `Click button to begin:`;
+    gameModal.querySelector("button").innerText = `New Game!`;
+    gameModal.classList.add("show");
+ }, 100);
+};
+
 
 
 // List of questions and answers
@@ -221,7 +228,7 @@ const gameOver = (winningGame) => {
         gameModal.querySelector("h3").innerText = `${winningGame ? 'Congratulations!': 'Game Over!'}`;
         gameModal.querySelector("p").innerHTML = `${modalText} <span>${newWord}</span>`;
         gameModal.classList.add("show");
-    }, 300);
+    }, 100);
 };
 
 // Reset game values, counter, keyboard, hangman image

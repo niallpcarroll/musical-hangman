@@ -11,7 +11,8 @@ const playAgain = document.querySelector(".replay-btn");
 
 let correctSound = new Audio('assets/sounds/correct-violin.mp3');
 let incorrectSound = new Audio('assets/sounds/incorrect-violin.mp3');
-let failSound = new Audio('assets/sounds/trumpet-fail.mp3');
+
+
 
 
 window.onload=(event)=>{
@@ -23,7 +24,6 @@ window.onload=(event)=>{
     gameModal.classList.add("show");
  }, 100);
 };
-
 
 
 // List of questions and answers
@@ -202,6 +202,7 @@ const wordList = [{
 ];
 
 
+
 // Variables for words, letter count
 let newWord, correctLetters,
     incorrectCount;
@@ -291,3 +292,4 @@ getRandomWord();
 
 // Event listener for click of 'play again' button
 playAgain.addEventListener("click", getRandomWord);
+

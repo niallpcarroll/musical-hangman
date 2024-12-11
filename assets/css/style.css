@@ -140,6 +140,7 @@ p {
     background: linen;
 }
 
+
 /* Pop-up for end of game - display correct answer & play again button */
 .game-modal {
     position: fixed;

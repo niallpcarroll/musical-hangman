@@ -286,6 +286,7 @@ p {
     /* Game pop-up appearance */
     .game-modal {
         width: 90%;
+        margin: 0;
         margin-left: 5%;
     }
 

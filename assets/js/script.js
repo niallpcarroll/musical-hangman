@@ -10,6 +10,7 @@ const gameModal = document.querySelector(".game-modal");
 const playAgain = document.querySelector(".replay-btn");
 const muteButtonRef = document.querySelector("#mutebutton");
 
+
 let correctSound = new Audio('assets/sounds/correct-violin.mp3');
 let incorrectSound = new Audio('assets/sounds/incorrect-violin.mp3');
 let isMuted = false;
@@ -21,6 +22,7 @@ window.onload=(event)=>{
     setTimeout(()=> {
     gameModal.querySelector("img").src = `assets/images/hangman-start-image.jpg`;   
     gameModal.querySelector("h3").innerText = `Let's play Musical Hangman!`;
+    
     gameModal.querySelector("p").innerText = `Click button to begin:`;
     gameModal.querySelector("button").innerText = `New Game!`;
     gameModal.classList.add("show");
@@ -239,6 +241,7 @@ const getRandomWord = () => {
 
 // Modal display if player is successful
 const gameOver = (winningGame) => {
+    
     // Based on code from CodingNepal tutorial
     setTimeout(() => {
         const modalText = winningGame ? `Correct! The word was:` : `The correct word was:`;

@@ -140,6 +140,17 @@ p {
     background: linen;
 }
 
+.mute-button {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50px;
+    border: 2px solid linen;
+    background-color: #3a4d23;
+}
+
+.mute-icon {
+    color: linen;
+}
 
 /* Pop-up for end of game - display correct answer & play again button */
 .game-modal {

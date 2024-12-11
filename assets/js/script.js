@@ -8,12 +8,14 @@ const wrongGuess = document.querySelector(".wrong-guess");
 const hangmanImage = document.querySelector(".hangman-image img");
 const gameModal = document.querySelector(".game-modal");
 const playAgain = document.querySelector(".replay-btn");
+const muteButtonRef = document.querySelector("#mutebutton");
 
 let correctSound = new Audio('assets/sounds/correct-violin.mp3');
 let incorrectSound = new Audio('assets/sounds/incorrect-violin.mp3');
+let isMuted = false;
 
 
-
+// Load welcome / start-game modal on first page load
 
 window.onload=(event)=>{
     setTimeout(()=> {
@@ -25,6 +27,21 @@ window.onload=(event)=>{
  }, 100);
 };
 
+// Mute and unmute button to switch correct / incorrect sounds on / off. Icon changes as selected
+
+muteButtonRef.addEventListener("click", () => {
+    if (isMuted) {
+        correctSound.muted = false;
+        incorrectSound.muted = false;
+        muteButtonRef.innerHTML = '<i class="fa-solid fa-volume-high mute-icon"></i>';
+    } else {
+        correctSound.muted = true;
+        incorrectSound.muted = true;
+        muteButtonRef.innerHTML = '<i class="fa-solid fa-volume-xmark mute-icon"></i>';
+    }
+
+    isMuted = !isMuted;
+});
 
 // List of questions and answers
 const wordList = [{

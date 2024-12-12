@@ -239,7 +239,7 @@ const getRandomWord = () => {
     reset();
 };
 
-// Modal display if player is successful
+// Modal display at end of game - successful / unsuccssful
 const gameOver = (winningGame) => {
     
     // Based on code from CodingNepal tutorial

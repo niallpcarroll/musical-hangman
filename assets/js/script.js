@@ -246,8 +246,9 @@ const gameOver = (winningGame) => {
     setTimeout(() => {
         const modalText = winningGame ? `Correct! The word was:` : `The correct word was:`;
         gameModal.querySelector("img").src = `assets/images/${winningGame ? 'winner': 'game_over'}.jpg`;
-        gameModal.querySelector("h3").innerText = `${winningGame ? 'Congratulations!': 'Game Over! The Musical Hangman won this round!'}`;
+        gameModal.querySelector("h3").innerText = `${winningGame ? 'Congratulations!': 'The Musical Hangman won this round!'}`;
         gameModal.querySelector("p").innerHTML = `${modalText} <span>${newWord}</span>`;
+        gameModal.querySelector("button").innerText = `Play Again!`;
         gameModal.classList.add("show");
     }, 100);
 };

@@ -142,9 +142,15 @@ When a keyboard button is clicked, the button becomes transparent, the border di
 ![Screenshot after four incorrect guesses](/assets/images/readme-images/four-wrong.png)
 </details>
 
-**The Modal** pop-up appears when the game ends. If the player successfully guesses the correct answer, the pop-up will display a medal image with a congratulatory message. On the other hand, if the player makes six incorrect choices, the hangman image will be complete, and the appearing pop-up will display a "game over" image and the correct answer.
+**The Modal** is designed to appear when the page is loaded for the first time and, thereafter, at the end of each game. On the initial page load, the player is invited to click the button to begin a new game. At the end of each game, if the player successfully guesses the correct answer, the pop-up will display a medal image with a congratulatory message. On the other hand, if the player makes six incorrect choices, the hangman image will be complete, and the appearing pop-up will display a "game over" image and the correct answer.
 
 <details open>
+<summary>Screenshot of modal after initial page load</summary>
+
+![Screenshot of modal on initial page load](/assets/images/readme-images/start-modal.png)
+</details>
+
+<details>
 <summary>Screenshot of pop-up after guessing the correct word</summary>
 
 ![Screenshot of game-win pop-up](/assets/images/readme-images/game-win.png)
@@ -164,6 +170,19 @@ When a keyboard button is clicked, the button becomes transparent, the border di
 ![Screenshot of "Play Again" button](/assets/images/readme-images/play-again.png)
 </details>
 
+**The Sound Button** allows the player to switch sound effects on and off during the game. When the sound is on, a "success" sound will play when the player selects a correct letter, while an "incorrect" sound will play when a wrong letter is selected. If the player hits the sound button, these sounds will be switched off. The icons clearly display whether the sound is on or off:
+
+<details>
+<summary>Screenshot of button with sound on</summary>
+
+![Screenshot of button with sound on](/assets/images/readme-images/sound-on.png)
+</details>
+
+<details>
+<summary>Screenshot of button with sound off</summary>
+
+![Screenshot of button with sound off](/assets/images/readme-images/sound-off.png)
+</details>
 
 ### The Error page
 **The Error page** will appear if a page does not load or if the user attempts to access a non-existent page on the website. This page is styled in the same general way as the rest of the website, and the message which appears provides a link through which the user can return to the homepage to begin a new game.
@@ -304,7 +323,8 @@ Below is a table with the game's features, detailing how it has been tested and 
 
 |Feature|Test case|Outcome|
 |---|---|---|
-|Open Page| - |Image visible, keyboard & question appear |
+|Open Page| - |Modal appears with "New Game" button displayed |
+|"New Game" button | Click | New game begins, displaying random question and keyboard |
 |Keyboard |Click letter |Letter fades, turns orange, no re-selection |
 |Keyboard (large screen) |Hover |Button colours inverted |
 |Keyboard |Click correct letter |Letter appears above question |
@@ -312,6 +332,7 @@ Below is a table with the game's features, detailing how it has been tested and 
 |Keyboard |Click incorrect letter |Hangman image changes, incorrect counter increases by 1 |
 |Keyboard |Click 6 incorrect letters |Pop-up message appears with image, correct answer & replay button |
 |Keyboard |Correct answer input |Pop-up message appears with image, correct answer & replay button |
+|Sound button | Click | Sound switches on / off; icon reflects sound status |
 |Replay button |Click |New game begins |
 |Error page |Attempt navigation to non-existent page |Error page and message displays |
 |Error page |Click on link to return to game |Returns user to game |
@@ -348,11 +369,13 @@ A number of bugs were identified during the course of testing. These are documen
 | Modal pop-up (when hidden) preventing keyboard from functioning |index.html / script.js / style.css | Altered 'pointer events' to 'none' in css |
 | Letter spaces not appearing after adding reset button | index.html / script.js | Corrected newWord variable |
 | Error page message styling not appearing correctly | index.html / style.css | Styling incorrectly placed in media query section - moved to main css section | 
+| Correct / Incorrect sounds not playing | script.js | Incorrect syntax - .play() |
+| Mute / Unmute button not working | script.js | Typo on l.35 corrected |
 
 ## Credits
 
 ### **Content References**
-+ This project is inspired by a tutorial from [CodingNepal](https://www.codingnepalweb.com/build-hangman-game-html-javascript/) . I acknowledge in particular the assistance provided in it for the JavaScript code for the keyboard layout, modal pop-up and the reset parameters for the game.
++ This project is inspired by a tutorial from [CodingNepal](https://www.codingnepalweb.com/build-hangman-game-html-javascript/) . I acknowledge in particular the assistance provided in it for the JavaScript code for the keyboard layout and the reset parameters for the game.
 
 + Content on JavaScript event listeners from the Love Maths project coursework (Code Institute).
 
@@ -367,6 +390,10 @@ A number of bugs were identified during the course of testing. These are documen
 + The background image of music manuscript, both of the modal images, and the error page image, were freely available from [Pexels](https://www.pexels.com).
 
 + The hangman images are my own using screenshots from Microsoft Paint app.
+
++ The correct and incorrect sound effects are from [FreeSound](https://www.freesound.org).
+
++ The mute / unmute button icons are from [FontAwesome](https://www.fontawesome.com).
 
 + [AmIResponsive](https://ui.dev/amiresponsive) for device responsivity image in README file.
 

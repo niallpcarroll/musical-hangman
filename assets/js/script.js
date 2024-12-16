@@ -10,11 +10,9 @@ const gameModal = document.querySelector(".game-modal");
 const playAgain = document.querySelector(".replay-btn");
 const muteButtonRef = document.querySelector("#mutebutton");
 
-
 let correctSound = new Audio('assets/sounds/correct-violin.mp3');
 let incorrectSound = new Audio('assets/sounds/incorrect-violin.mp3');
 let isMuted = false;
-
 
 // Load welcome / start-game modal on first page load
 
@@ -220,8 +218,6 @@ const wordList = [{
     },
 ];
 
-
-
 // Variables for words, letter count
 let newWord, correctLetters,
     incorrectCount;
@@ -286,7 +282,6 @@ const beginGame = (button, clickedLetter) => {
         hangmanImage.src = `assets/images/hangman-${incorrectCount}.png`;
     }
       
-
     // Disable keyboard button when clicked once
     button.disabled = true;
 
@@ -297,7 +292,6 @@ const beginGame = (button, clickedLetter) => {
     if (incorrectCount === maxIncorrect) return gameOver(false);
     if (correctLetters.length === newWord.length) return gameOver(true);
 };
-
 
 // Keyboard input buttons event listener for keyboard button click
 // This code is from CodingNepal tutorial
@@ -313,4 +307,3 @@ getRandomWord();
 
 // Event listener for click of 'play again' button
 playAgain.addEventListener("click", getRandomWord);
-

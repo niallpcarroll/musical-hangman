@@ -328,8 +328,10 @@ Below is a table with the game's features, detailing how it has been tested and 
 |Keyboard |Click letter |Letter fades, turns orange, no re-selection |
 |Keyboard (large screen) |Hover |Button colours inverted |
 |Keyboard |Click correct letter |Letter appears above question |
+|Keyboard | Click correct letter | correct-violin.mp3 plays |
 |Keyboard |Click incorrect letter |Letter does not show above question |
 |Keyboard |Click incorrect letter |Hangman image changes, incorrect counter increases by 1 |
+|Keyboard | Click incorrect letter | incorrect-violin.mp3 plays |
 |Keyboard |Click 6 incorrect letters |Pop-up message appears with image, correct answer & replay button |
 |Keyboard |Correct answer input |Pop-up message appears with image, correct answer & replay button |
 |Sound button | Click | Sound switches on / off; icon reflects sound status |

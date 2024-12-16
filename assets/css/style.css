@@ -60,8 +60,6 @@ h1 {
     background: #3a4d23;
 } 
 
-
-
 .game-words {
     display: flex;
     list-style: none;
@@ -101,7 +99,7 @@ p {
 }
 
 .modal-heading {
-    padding: 10px, 10px, 0, 10px;
+    padding: 10px 10px 0 10px;
 }
 
 .question-text {
@@ -186,7 +184,6 @@ p {
     opacity: 1;
 }
 
-
 .game-end {
     width: 60%;
     padding: 25px;
@@ -239,8 +236,6 @@ p {
     border: 2px solid #3a4d23;
 }
 
-
-
 /* Display correct answer in uppercase */
 .game-modal span {
     text-transform: uppercase;
@@ -268,7 +263,7 @@ p {
         color: #FAF0E6;
         border: 2px solid #FAF0E6;
         z-index: 999;
-    }
+}
 
 /* Media query for small screens - cause content to appear in column and header to disappear */
 @media (max-width: 782px) {
